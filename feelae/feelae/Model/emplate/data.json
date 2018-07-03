@@ -1,82 +1,58 @@
-"question": [
+
+{
+    "Seasonal":{
+        "id": 1,
+        "question": "question",
+        "pageType": "DoubleChoiceQuestion",
+        "response": [
+                     {
+                     "oui": {
+                     "question": "question",
+                     "response": [
+                                  {"oui": {
+                                  "conclusion": "va chez au urgence duuuuud"
+                                  },
+                                  "non":{
+                                  "conclusion": "ca peut attendre de voir ton généraliste"
+                                  }
+                                  }
+                                  ]
+                     
+                     }
+                     
+                     },
+                     {"non":{
+                     "conclusion": "Parcours-normal"
+                     }
+                     }
+                     ]
+    },
+    "body": [
              {
-             "id" : 1,
-             "question": "question ? ",
-             "response": [
-                          "oui",
-                          "non"
-                          ]
+             "jambeDroite":{
+             
              },
-             {
-             "id" : 2,
-             "question": "question ? ",
-             "response": [
-                          "oui",
-                          "non"
-                          ]
+             "tete":{
+             
              },
-             {
-             "id" : 3,
-             "question": "question ? ",
-             "response": [
-                          "oui",
-                          "non"
-                          ]
+             "corps":{
+             
              },
-             {
-             "id" : 4,
-             "question": "question ? ",
-             "response": [
-                          "oui",
-                          "non"
-                          ]
+             "couilles":{
+             
              },
-             {
-             "id" : 5,
-             "question": "question ? ",
-             "response": [
-                          "oui",
-                          "non"
-                          ]
+             "jambeGauche":{
+             
              },
-             {
-             "id" : 6,
-             "question": "question ? ",
-             "response": [
-                          "oui",
-                          "non"
-                          ]
+             "brasGauche":{
+             
              },
-             {
-             "id" : 7,
-             "question": "question ? ",
-             "response": [
-                          "oui",
-                          "non"
-                          ]
+             "brasDroit":{
+             
              },
-             {
-             "id" : 8,
-             "question": "question ? ",
-             "response": [
-                          "oui",
-                          "non"
-                          ]
-             },
-             {
-             "id" : 9,
-             "question": "question ? ",
-             "response": [
-                          "oui",
-                          "non"
-                          ]
-             },
-             {
-             "id" : 10,
-             "question": "question ? ",
-             "response": [
-                          "oui",
-                          "non"
-                          ]
+             "dos":{
+             
+             }
              }
              ]
+}
