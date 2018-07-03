@@ -8,8 +8,37 @@
 
 import UIKit
 
-class SymptomeController: UIViewController {
+class SymptomeController: UIViewController, PassDataDelegate {
 
+    let dataTransfer: dataTransformer = dataTransformer()
+    let url = Bundle.main.path(forResource: "../Model/data", ofType: "json")
+    
+    var segueShowPainIdentifier = "showPain"
+    var painController: PainController?
+    
+    
+    @IBAction func ButtonAction(_ sender: Any, forEvent event: UIEvent) {
+        print("yolo")
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyboard?.instantiateViewController(withIdentifier: "painController")
+        
+        self.present(nextViewController!, animated:true, completion:nil)
+        
+        //let yolo = dataTransfer.transform(url : url!)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier==segueShowPainIdentifier) {
+            painController = segue.destination as? PainController
+            painController?.delegate=self
+        }
+    }
+    
+    func didAddProduct(product: String) {
+        print("yoloDone")
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,16 +49,8 @@ class SymptomeController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+protocol PassDataDelegate{
+    func didAddProduct(product:String)
 }

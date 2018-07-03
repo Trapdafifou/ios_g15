@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		053A8A7020EB64F300054A0F /* question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A8A6E20EB64F300054A0F /* question.swift */; };
+		053A8A7620EB6B1D00054A0F /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 053A8A7520EB6B1C00054A0F /* data.json */; };
+		053A8A7820EB710D00054A0F /* dataTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A8A7720EB710D00054A0F /* dataTransformer.swift */; };
+		05DF865920EBB50A0094BA00 /* PainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DF865820EBB50A0094BA00 /* PainController.swift */; };
+		05DFDB9923D404FABEB9DC68 /* Pods_feelae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE2B7722D33159CA4EF26D5 /* Pods_feelae.framework */; };
 		531AF9FC20EA283200E680DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AF9FB20EA283200E680DF /* AppDelegate.swift */; };
 		531AF9FE20EA283200E680DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AF9FD20EA283200E680DF /* ViewController.swift */; };
 		531AFA0120EA283200E680DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531AF9FF20EA283200E680DF /* Main.storyboard */; };
@@ -16,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		053A8A6E20EB64F300054A0F /* question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = question.swift; path = emplate/question.swift; sourceTree = "<group>"; };
+		053A8A7520EB6B1C00054A0F /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = emplate/data.json; sourceTree = "<group>"; };
+		053A8A7720EB710D00054A0F /* dataTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = dataTransformer.swift; path = emplate/dataTransformer.swift; sourceTree = "<group>"; };
+		05DF865820EBB50A0094BA00 /* PainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PainController.swift; path = emplate/PainController.swift; sourceTree = "<group>"; };
+		3E96664AA079A3D199218385 /* Pods-feelae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feelae.debug.xcconfig"; path = "Pods/Target Support Files/Pods-feelae/Pods-feelae.debug.xcconfig"; sourceTree = "<group>"; };
+		4FE2B7722D33159CA4EF26D5 /* Pods_feelae.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_feelae.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		531AF9F820EA283200E680DF /* feelae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = feelae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		531AF9FB20EA283200E680DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		531AF9FD20EA283200E680DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +35,7 @@
 		531AFA0520EA283300E680DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		531AFA0720EA283300E680DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		531AFA0E20EA29A500E680DF /* SymptomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomeController.swift; sourceTree = "<group>"; };
+		63AA058B0885BEE97245EA33 /* Pods-feelae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feelae.release.xcconfig"; path = "Pods/Target Support Files/Pods-feelae/Pods-feelae.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05DFDB9923D404FABEB9DC68 /* Pods_feelae.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		053A8A6D20EB64D600054A0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				053A8A7520EB6B1C00054A0F /* data.json */,
+				053A8A6E20EB64F300054A0F /* question.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		053A8A7220EB6A3A00054A0F /* Transformer */ = {
+			isa = PBXGroup;
+			children = (
+				053A8A7720EB710D00054A0F /* dataTransformer.swift */,
+			);
+			path = Transformer;
+			sourceTree = "<group>";
+		};
 		531AF9EF20EA283200E680DF = {
 			isa = PBXGroup;
 			children = (
 				531AF9FA20EA283200E680DF /* feelae */,
 				531AF9F920EA283200E680DF /* Products */,
+				AACD1A690E8492EEBE1D26D5 /* Pods */,
+				F3E4A5DC177B2B7C4DAF66C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +88,8 @@
 		531AF9FA20EA283200E680DF /* feelae */ = {
 			isa = PBXGroup;
 			children = (
+				053A8A7220EB6A3A00054A0F /* Transformer */,
+				053A8A6D20EB64D600054A0F /* Model */,
 				531AFA0D20EA295300E680DF /* Controllers */,
 				531AF9FB20EA283200E680DF /* AppDelegate.swift */,
 				531AF9FF20EA283200E680DF /* Main.storyboard */,
@@ -69,10 +103,28 @@
 		531AFA0D20EA295300E680DF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				05DF865820EBB50A0094BA00 /* PainController.swift */,
 				531AF9FD20EA283200E680DF /* ViewController.swift */,
 				531AFA0E20EA29A500E680DF /* SymptomeController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AACD1A690E8492EEBE1D26D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E96664AA079A3D199218385 /* Pods-feelae.debug.xcconfig */,
+				63AA058B0885BEE97245EA33 /* Pods-feelae.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F3E4A5DC177B2B7C4DAF66C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FE2B7722D33159CA4EF26D5 /* Pods_feelae.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 531AFA0A20EA283300E680DF /* Build configuration list for PBXNativeTarget "feelae" */;
 			buildPhases = (
+				40FA87250B52397DD15DE19B /* [CP] Check Pods Manifest.lock */,
 				531AF9F420EA283200E680DF /* Sources */,
 				531AF9F520EA283200E680DF /* Frameworks */,
 				531AF9F620EA283200E680DF /* Resources */,
+				23F09208CDA6870EC019C9D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,17 +190,60 @@
 				531AFA0620EA283300E680DF /* LaunchScreen.storyboard in Resources */,
 				531AFA0320EA283300E680DF /* Assets.xcassets in Resources */,
 				531AFA0120EA283200E680DF /* Main.storyboard in Resources */,
+				053A8A7620EB6B1D00054A0F /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23F09208CDA6870EC019C9D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-feelae/Pods-feelae-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-feelae/Pods-feelae-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40FA87250B52397DD15DE19B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-feelae-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		531AF9F420EA283200E680DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				053A8A7820EB710D00054A0F /* dataTransformer.swift in Sources */,
 				531AF9FE20EA283200E680DF /* ViewController.swift in Sources */,
+				053A8A7020EB64F300054A0F /* question.swift in Sources */,
+				05DF865920EBB50A0094BA00 /* PainController.swift in Sources */,
 				531AF9FC20EA283200E680DF /* AppDelegate.swift in Sources */,
 				531AFA0F20EA29A500E680DF /* SymptomeController.swift in Sources */,
 			);
@@ -290,6 +387,7 @@
 		};
 		531AFA0B20EA283300E680DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E96664AA079A3D199218385 /* Pods-feelae.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,6 +406,7 @@
 		};
 		531AFA0C20EA283300E680DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63AA058B0885BEE97245EA33 /* Pods-feelae.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,26 +1,26 @@
-//
-//  dataTransformer.swift
-//  feelae
-//
-//  Created by victor billard-madrieres on 03/07/2018.
-//  Copyright © 2018 Thibaut Marsal. All rights reserved.
-//
-
 import Foundation
+import SwiftyJSON
 
 class dataTransformer {
     
-    let path = Bundle.main.path(forResource: "Model/data", ofType: "json")
+    let url = Bundle.main.path(forResource: "../Model/data", ofType: "json")
     
-    func transform( path:String )->[question]{
-        if (path != "") {
+    func transform(url:String )->[question]?{
+        if (url != "") {
             let question: [question]
             
-            let json = JSON(data: dataFromNetworking)
-            if let userName = json[0]["user"]["name"].string {
-                //Now you got your value
-            }
-        return question
+            let jsonFilePath:NSString = Bundle.main.path(forResource:"../Model/data", ofType: "json")! as NSString
+            let jsonData:NSData = NSData(contentsOfFile: jsonFilePath as String) as! NSData
+            
+           // let json = JSON(data: jsonData as Data)
+          //  print(json)
+            
+            //print(json["question"]["question"] ?? "default")
+           // if let username = json["question"]["question"].string {
+            //    print(username)
+            //}
+        }
+        return nil
     }
 }
 
