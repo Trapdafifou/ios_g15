@@ -18,15 +18,126 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7s-mr-har">
-                                <rect key="frame" x="153" y="318" width="69" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="human-part" translatesAutoresizingMaskIntoConstraints="NO" id="QoL-Pg-DLT">
+                                <rect key="frame" x="62" y="60" width="250" height="546"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fZ-2d-mAJ">
+                                <rect key="frame" x="152" y="60" width="70" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Click here"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICz-FA-9cs">
+                                <rect key="frame" x="163" y="126" width="47" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHP-bs-oo9">
+                                <rect key="frame" x="138" y="152" width="98" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VR5-7F-TdX">
+                                <rect key="frame" x="138" y="260" width="98" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWg-68-CuV">
+                                <rect key="frame" x="127" y="340" width="56" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QN0-kN-Cl5">
+                                <rect key="frame" x="127" y="480" width="56" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txq-GX-fQx">
+                                <rect key="frame" x="127" y="455" width="56" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYm-jS-0Bn">
+                                <rect key="frame" x="191" y="340" width="56" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTd-LM-XnW">
+                                <rect key="frame" x="191" y="480" width="56" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJp-wI-kbU">
+                                <rect key="frame" x="191" y="455" width="56" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebC-Xo-Wam">
+                                <rect key="frame" x="127" y="579" width="56" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dO-XG-NQK">
+                                <rect key="frame" x="180" y="579" width="56" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1w6-3r-tPX">
+                                <rect key="frame" x="87" y="152" width="56" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abe-NB-Aq2">
+                                <rect key="frame" x="74" y="243" width="56" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBI-S9-MLR">
+                                <rect key="frame" x="62" y="323" width="56" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="radio-on-button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLh-bW-8kL">
+                                <rect key="frame" x="216" y="152" width="56" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waN-Kb-B5J">
+                                <rect key="frame" x="244" y="243" width="56" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOC-MM-fxj">
+                                <rect key="frame" x="265" y="323" width="56" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outletCollection property="buttonsTab" destination="4fZ-2d-mAJ" collectionClass="NSMutableArray" id="g2J-Ll-3UD"/>
+                        <outletCollection property="buttonsTab" destination="4fZ-2d-mAJ" collectionClass="NSMutableArray" id="qPC-Ek-0uX"/>
+                        <outletCollection property="buttonsTab" destination="ICz-FA-9cs" collectionClass="NSMutableArray" id="SWb-Ac-zIu"/>
+                        <outletCollection property="buttonsTab" destination="1w6-3r-tPX" collectionClass="NSMutableArray" id="iTE-4t-vBo"/>
+                        <outletCollection property="buttonsTab" destination="abe-NB-Aq2" collectionClass="NSMutableArray" id="DVV-sz-mAN"/>
+                        <outletCollection property="buttonsTab" destination="cBI-S9-MLR" collectionClass="NSMutableArray" id="jOx-ak-dVY"/>
+                        <outletCollection property="buttonsTab" destination="jHP-bs-oo9" collectionClass="NSMutableArray" id="bh2-3z-uiF"/>
+                        <outletCollection property="buttonsTab" destination="VR5-7F-TdX" collectionClass="NSMutableArray" id="bHz-g5-qpy"/>
+                        <outletCollection property="buttonsTab" destination="GLh-bW-8kL" collectionClass="NSMutableArray" id="yag-9d-AaU"/>
+                        <outletCollection property="buttonsTab" destination="waN-Kb-B5J" collectionClass="NSMutableArray" id="KC2-ar-6gb"/>
+                        <outletCollection property="buttonsTab" destination="GOC-MM-fxj" collectionClass="NSMutableArray" id="ScQ-2a-xIL"/>
+                        <outletCollection property="buttonsTab" destination="JWg-68-CuV" collectionClass="NSMutableArray" id="lUe-Xt-Sgd"/>
+                        <outletCollection property="buttonsTab" destination="sYm-jS-0Bn" collectionClass="NSMutableArray" id="LoK-C5-4Ud"/>
+                        <outletCollection property="buttonsTab" destination="txq-GX-fQx" collectionClass="NSMutableArray" id="pou-Po-FeM"/>
+                        <outletCollection property="buttonsTab" destination="JJp-wI-kbU" collectionClass="NSMutableArray" id="frz-9k-XMC"/>
+                        <outletCollection property="buttonsTab" destination="QN0-kN-Cl5" collectionClass="NSMutableArray" id="eK2-9m-w1Z"/>
+                        <outletCollection property="buttonsTab" destination="XTd-LM-XnW" collectionClass="NSMutableArray" id="781-rU-uWH"/>
+                        <outletCollection property="buttonsTab" destination="ebC-Xo-Wam" collectionClass="NSMutableArray" id="1cX-KU-fs4"/>
+                        <outletCollection property="buttonsTab" destination="5dO-XG-NQK" collectionClass="NSMutableArray" id="QHD-ZU-Jva"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -48,4 +159,8 @@
             <point key="canvasLocation" x="970" y="32"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="human-part" width="921" height="2192"/>
+        <image name="radio-on-button" width="256" height="256"/>
+    </resources>
 </document>
