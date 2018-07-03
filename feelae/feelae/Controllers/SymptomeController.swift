@@ -9,24 +9,20 @@
 import UIKit
 
 class SymptomeController: UIViewController, PassDataDelegate {
-
+    @IBAction func ButtonTrueClicked(_ sender: UIButton) {
+    }
+    
+    @IBOutlet weak var ButtonFalse: UIButton!
+    @IBOutlet weak var ButtonYes: UIButton!
+    
+    @IBAction func ButtonFalseClicked(_ sender: UIButton) {
+    }
     let dataTransfer: dataTransformer = dataTransformer()
     let url = Bundle.main.path(forResource: "../Model/data", ofType: "json")
     
     var segueShowPainIdentifier = "showPain"
     var painController: PainController?
     
-    
-    @IBAction func ButtonAction(_ sender: Any, forEvent event: UIEvent) {
-        print("yolo")
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        
-        let nextViewController = storyboard?.instantiateViewController(withIdentifier: "painController")
-        
-        self.present(nextViewController!, animated:true, completion:nil)
-        
-        //let yolo = dataTransfer.transform(url : url!)
-    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier==segueShowPainIdentifier) {
             painController = segue.destination as? PainController
@@ -42,6 +38,7 @@ class SymptomeController: UIViewController, PassDataDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
     }
 

@@ -10,11 +10,12 @@
 		053A8A7020EB64F300054A0F /* question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A8A6E20EB64F300054A0F /* question.swift */; };
 		053A8A7620EB6B1D00054A0F /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 053A8A7520EB6B1C00054A0F /* data.json */; };
 		053A8A7820EB710D00054A0F /* dataTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A8A7720EB710D00054A0F /* dataTransformer.swift */; };
-		05DF865920EBB50A0094BA00 /* PainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DF865820EBB50A0094BA00 /* PainController.swift */; };
+		05881C9520EBE875009DB186 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05881C9420EBE875009DB186 /* NavigationController.swift */; };
+		05881C9720EBEE95009DB186 /* PainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05881C9620EBEE95009DB186 /* PainController.swift */; };
 		05DFDB9923D404FABEB9DC68 /* Pods_feelae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE2B7722D33159CA4EF26D5 /* Pods_feelae.framework */; };
 		531AF9FC20EA283200E680DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AF9FB20EA283200E680DF /* AppDelegate.swift */; };
 		531AF9FE20EA283200E680DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AF9FD20EA283200E680DF /* ViewController.swift */; };
-		531AFA0120EA283200E680DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531AF9FF20EA283200E680DF /* Main.storyboard */; };
+		531AFA0120EA283200E680DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531AF9FF20EA283200E680DF /* Main.storyboard */; settings = {ASSET_TAGS = (Stepper, ); }; };
 		531AFA0320EA283300E680DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 531AFA0220EA283300E680DF /* Assets.xcassets */; };
 		531AFA0620EA283300E680DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531AFA0420EA283300E680DF /* LaunchScreen.storyboard */; };
 		531AFA0F20EA29A500E680DF /* SymptomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AFA0E20EA29A500E680DF /* SymptomeController.swift */; };
@@ -24,7 +25,8 @@
 		053A8A6E20EB64F300054A0F /* question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = question.swift; path = emplate/question.swift; sourceTree = "<group>"; };
 		053A8A7520EB6B1C00054A0F /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = emplate/data.json; sourceTree = "<group>"; };
 		053A8A7720EB710D00054A0F /* dataTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = dataTransformer.swift; path = emplate/dataTransformer.swift; sourceTree = "<group>"; };
-		05DF865820EBB50A0094BA00 /* PainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PainController.swift; path = emplate/PainController.swift; sourceTree = "<group>"; };
+		05881C9420EBE875009DB186 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = emplate/NavigationController.swift; sourceTree = "<group>"; };
+		05881C9620EBEE95009DB186 /* PainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PainController.swift; path = emplate/PainController.swift; sourceTree = "<group>"; };
 		3E96664AA079A3D199218385 /* Pods-feelae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feelae.debug.xcconfig"; path = "Pods/Target Support Files/Pods-feelae/Pods-feelae.debug.xcconfig"; sourceTree = "<group>"; };
 		4FE2B7722D33159CA4EF26D5 /* Pods_feelae.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_feelae.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		531AF9F820EA283200E680DF /* feelae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = feelae.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +105,8 @@
 		531AFA0D20EA295300E680DF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				05DF865820EBB50A0094BA00 /* PainController.swift */,
+				05881C9620EBEE95009DB186 /* PainController.swift */,
+				05881C9420EBE875009DB186 /* NavigationController.swift */,
 				531AF9FD20EA283200E680DF /* ViewController.swift */,
 				531AFA0E20EA29A500E680DF /* SymptomeController.swift */,
 			);
@@ -155,6 +158,9 @@
 		531AF9F020EA283200E680DF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					Stepper,
+				);
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Thibaut Marsal";
@@ -243,9 +249,10 @@
 				053A8A7820EB710D00054A0F /* dataTransformer.swift in Sources */,
 				531AF9FE20EA283200E680DF /* ViewController.swift in Sources */,
 				053A8A7020EB64F300054A0F /* question.swift in Sources */,
-				05DF865920EBB50A0094BA00 /* PainController.swift in Sources */,
 				531AF9FC20EA283200E680DF /* AppDelegate.swift in Sources */,
+				05881C9520EBE875009DB186 /* NavigationController.swift in Sources */,
 				531AFA0F20EA29A500E680DF /* SymptomeController.swift in Sources */,
+				05881C9720EBEE95009DB186 /* PainController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,10 +329,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos11.3;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -376,9 +383,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos11.3;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
