@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E54C55F20EBEA9D00D87FC2 /* Grippe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E54C55E20EBEA9D00D87FC2 /* Grippe.storyboard */; };
+		1E54C56120EC007000D87FC2 /* checking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E54C56020EC007000D87FC2 /* checking.storyboard */; };
+		1E54C56920EC16F000D87FC2 /*  CheckListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E54C56820EC16F000D87FC2 /*  CheckListController.swift */; };
+		1E54C56B20EC1C3800D87FC2 /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E54C56A20EC1C3800D87FC2 /* TableView.storyboard */; };
+		1E54C56D20EC2B3C00D87FC2 /* Picker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E54C56C20EC2B3C00D87FC2 /* Picker.storyboard */; };
+		1E54C56F20EC311B00D87FC2 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E54C56E20EC311B00D87FC2 /* PickerViewController.swift */; };
+		1EB912F220ECB48400239F69 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB912F120ECB48400239F69 /* Result.storyboard */; };
+		1EB912F420ECCD4300239F69 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB912F320ECCD4300239F69 /* ResultViewController.swift */; };
 		531AF9FC20EA283200E680DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AF9FB20EA283200E680DF /* AppDelegate.swift */; };
 		531AF9FE20EA283200E680DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AF9FD20EA283200E680DF /* ViewController.swift */; };
 		531AFA0120EA283200E680DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531AF9FF20EA283200E680DF /* Main.storyboard */; };
@@ -16,6 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E54C55E20EBEA9D00D87FC2 /* Grippe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Grippe.storyboard; sourceTree = "<group>"; };
+		1E54C56020EC007000D87FC2 /* checking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = checking.storyboard; sourceTree = "<group>"; };
+		1E54C56820EC16F000D87FC2 /*  CheckListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " CheckListController.swift"; sourceTree = "<group>"; };
+		1E54C56A20EC1C3800D87FC2 /* TableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
+		1E54C56C20EC2B3C00D87FC2 /* Picker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Picker.storyboard; sourceTree = "<group>"; };
+		1E54C56E20EC311B00D87FC2 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		1EB912F120ECB48400239F69 /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
+		1EB912F320ECCD4300239F69 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		531AF9F820EA283200E680DF /* feelae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = feelae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		531AF9FB20EA283200E680DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		531AF9FD20EA283200E680DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +78,11 @@
 				531AFA0220EA283300E680DF /* Assets.xcassets */,
 				531AFA0420EA283300E680DF /* LaunchScreen.storyboard */,
 				531AFA0720EA283300E680DF /* Info.plist */,
+				1E54C55E20EBEA9D00D87FC2 /* Grippe.storyboard */,
+				1E54C56020EC007000D87FC2 /* checking.storyboard */,
+				1E54C56A20EC1C3800D87FC2 /* TableView.storyboard */,
+				1E54C56C20EC2B3C00D87FC2 /* Picker.storyboard */,
+				1EB912F120ECB48400239F69 /* Result.storyboard */,
 			);
 			path = feelae;
 			sourceTree = "<group>";
@@ -69,8 +90,11 @@
 		531AFA0D20EA295300E680DF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1E54C56820EC16F000D87FC2 /*  CheckListController.swift */,
 				531AF9FD20EA283200E680DF /* ViewController.swift */,
 				531AFA0E20EA29A500E680DF /* SymptomeController.swift */,
+				1E54C56E20EC311B00D87FC2 /* PickerViewController.swift */,
+				1EB912F320ECCD4300239F69 /* ResultViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -135,7 +159,12 @@
 			files = (
 				531AFA0620EA283300E680DF /* LaunchScreen.storyboard in Resources */,
 				531AFA0320EA283300E680DF /* Assets.xcassets in Resources */,
+				1E54C56120EC007000D87FC2 /* checking.storyboard in Resources */,
 				531AFA0120EA283200E680DF /* Main.storyboard in Resources */,
+				1E54C55F20EBEA9D00D87FC2 /* Grippe.storyboard in Resources */,
+				1E54C56B20EC1C3800D87FC2 /* TableView.storyboard in Resources */,
+				1E54C56D20EC2B3C00D87FC2 /* Picker.storyboard in Resources */,
+				1EB912F220ECB48400239F69 /* Result.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,9 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E54C56F20EC311B00D87FC2 /* PickerViewController.swift in Sources */,
 				531AF9FE20EA283200E680DF /* ViewController.swift in Sources */,
 				531AF9FC20EA283200E680DF /* AppDelegate.swift in Sources */,
 				531AFA0F20EA29A500E680DF /* SymptomeController.swift in Sources */,
+				1E54C56920EC16F000D87FC2 /*  CheckListController.swift in Sources */,
+				1EB912F420ECCD4300239F69 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
