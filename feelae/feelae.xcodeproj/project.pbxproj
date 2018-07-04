@@ -11,6 +11,7 @@
 		0515B3E420ECF75D00D1A3FA /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 0515B3E220ECF75D00D1A3FA /* data.json */; };
 		0515B3E720ECF77700D1A3FA /* dataTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515B3E620ECF77700D1A3FA /* dataTransformer.swift */; };
 		0515B3EC20ED2C2600D1A3FA /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515B3EB20ED2C2500D1A3FA /* NavigationControllerDelegate.swift */; };
+		0515B3EE20ED55DA00D1A3FA /* CheckingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515B3ED20ED55DA00D1A3FA /* CheckingController.swift */; };
 		055103CF20ECED3B009F244E /* PainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055103CE20ECED32009F244E /* PainController.swift */; };
 		08FE7369EA1D5BCE6FD4C2A4 /* Pods_feelae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6872973B0B9C7A47012FEA3D /* Pods_feelae.framework */; };
 		1E54C56120EC007000D87FC2 /* checking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E54C56020EC007000D87FC2 /* checking.storyboard */; };
@@ -33,6 +34,7 @@
 		0515B3E220ECF75D00D1A3FA /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = feelae/Model/data.json; sourceTree = SOURCE_ROOT; };
 		0515B3E620ECF77700D1A3FA /* dataTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = dataTransformer.swift; path = feelae/Transformer/dataTransformer.swift; sourceTree = SOURCE_ROOT; };
 		0515B3EB20ED2C2500D1A3FA /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationControllerDelegate.swift; path = emplate/NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		0515B3ED20ED55DA00D1A3FA /* CheckingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckingController.swift; path = emplate/CheckingController.swift; sourceTree = "<group>"; };
 		055103CE20ECED32009F244E /* PainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PainController.swift; sourceTree = "<group>"; };
 		09046C71812C2CD8795EECBF /* Pods-feelae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feelae.debug.xcconfig"; path = "Pods/Target Support Files/Pods-feelae/Pods-feelae.debug.xcconfig"; sourceTree = "<group>"; };
 		1E54C56020EC007000D87FC2 /* checking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = checking.storyboard; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		531AFA0D20EA295300E680DF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0515B3ED20ED55DA00D1A3FA /* CheckingController.swift */,
 				0515B3EB20ED2C2500D1A3FA /* NavigationControllerDelegate.swift */,
 				055103CE20ECED32009F244E /* PainController.swift */,
 				1E54C56820EC16F000D87FC2 /*  CheckListController.swift */,
@@ -278,6 +281,7 @@
 				531AFA0F20EA29A500E680DF /* SymptomeController.swift in Sources */,
 				1E54C56920EC16F000D87FC2 /*  CheckListController.swift in Sources */,
 				0515B3EC20ED2C2600D1A3FA /* NavigationControllerDelegate.swift in Sources */,
+				0515B3EE20ED55DA00D1A3FA /* CheckingController.swift in Sources */,
 				1EB912F420ECCD4300239F69 /* ResultViewController.swift in Sources */,
 				055103CF20ECED3B009F244E /* PainController.swift in Sources */,
 			);

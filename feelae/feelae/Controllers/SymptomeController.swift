@@ -11,22 +11,18 @@ class SymptomeController: UIViewController {
     @IBOutlet weak var NoButton: UIButton!
     
     @IBAction func NoAction(_ sender: UIButton) {
-        var mainQuestion = dataTransfer.transform()
-        var pageType = mainQuestion?.getPageType()
-        //var controllerToSend = navigation.ReturnPageType(pageType: pageType!)
-        //self.changeView(controller: controllerToSend)
+        var controllerToSend = navigation.ReturnPageType(question: question!, response: "non")
+        self.changeView(controller: controllerToSend!)
     }
     
     @IBAction func YEsAction(_ sender: UIButton) {
         var mainQuestion = dataTransfer.transform()
-        var pageType = mainQuestion?.getPageType()
-     //   var controllerToSend = navigation.ReturnPageType(pageType: pageType!)
-     //   self.changeView(controller: controllerToSend)
+        var controllerToSend = navigation.ReturnPageType(question: mainQuestion!, response: "oui")
+        self.changeView(controller: controllerToSend!)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 
     override func didReceiveMemoryWarning() {

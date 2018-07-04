@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     
     let dataTransfer: dataTransformer = dataTransformer()
     let navigation: NavigationControllerDelegate = NavigationControllerDelegate()
-    var question : [Question]? = nil
     var response: String = ""
     
     @IBAction func ButtonClicked(_ sender: UIButton) {
