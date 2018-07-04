@@ -10,19 +10,37 @@ import Foundation
 
 class question : NSObject{
     
-    var question: String
-    var answers: [String]
+    var id: String
+    var question: String?
+    var response: [question]?
+    var pageType: String
+    var conclusion: String?
     
-    init( question: String, answers: [String]) {
+    init( id: String, question: String, pageType: String, response: [question]?, conclusion: String?) {
         self.question = question
-        self.answers = answers
+        self.id = id
+        self.pageType = pageType
+        self.response = response
+        self.conclusion = conclusion
     }
     
-    func getQuestion() -> String {
+    func getQuestion() -> String? {
         return question
     }
     
-    func getQuestion() -> [String] {
-        return answers
+    func getPageType() -> String {
+        return pageType
+    }
+    
+    func getResponse() -> [question]? {
+        return response
+    }
+    
+    func getConclusion() -> String? {
+        return conclusion
+    }
+    
+    func getId() -> String {
+        return id
     }
 }

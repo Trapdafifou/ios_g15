@@ -48,47 +48,6 @@
             </objects>
             <point key="canvasLocation" x="1836" y="31.934032983508249"/>
         </scene>
-        <!--Pain Controller-->
-        <scene sceneID="twV-1k-fdY">
-            <objects>
-                <viewController storyboardIdentifier="painController" id="6vA-Fg-BTJ" customClass="PainController" customModule="feelae" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZDt-hT-lFM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="3S6-Zy-ncZ">
-                                <rect key="frame" x="119" y="319" width="118" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </slider>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="pain duuuuuuuuuuuud or pas pain ?" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ga-wh-G9u">
-                                <rect key="frame" x="52" y="252" width="252" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVm-wa-dTI">
-                                <rect key="frame" x="164" y="379" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dks-jg-j19">
-                                <rect key="frame" x="265" y="319" width="94" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="SteppedValueChanger:" destination="6vA-Fg-BTJ" eventType="valueChanged" id="zCP-IZ-209"/>
-                                </connections>
-                            </stepper>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="hDf-7d-3Oj"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="3pv-CS-GkB"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6in-PK-MjL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2669.5999999999999" y="31.934032983508249"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="dBF-R5-bnK">
             <objects>

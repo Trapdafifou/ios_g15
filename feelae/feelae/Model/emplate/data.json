@@ -1,58 +1,652 @@
-
 {
-    "Seasonal":{
-        "id": 1,
-        "question": "question",
-        "pageType": "DoubleChoiceQuestion",
-        "response": [
-                     {
-                     "oui": {
-                     "question": "question",
-                     "response": [
-                                  {"oui": {
-                                  "conclusion": "va chez au urgence duuuuud"
-                                  },
-                                  "non":{
-                                  "conclusion": "ca peut attendre de voir ton généraliste"
-                                  }
-                                  }
-                                  ]
-                     
-                     }
-                     
-                     },
-                     {"non":{
-                     "conclusion": "Parcours-normal"
-                     }
-                     }
-                     ]
+    "Seasonal": {
+        "id": "seasonal",
+        "question": "Pensez-vous avoir la grippe ?",
+        "pageType": "doubleChoiceQuestion",
+        "answers": [
+                    {
+                    "id": "oui",
+                    "question": "Avez vous mal à la tete ?",
+                    "pageType": "bodyMan",
+                    "answers": [
+                                {
+                                "id": "oui",
+                                "question": "Avez vous mal à la gorge ?",
+                                "pageType": "bodyMan",
+                                "answers": [
+                                            {
+                                            "id": "oui",
+                                            "question": "repetition avec intervals?",
+                                            "pageType": "doubleChoiceQuestion",
+                                            "answers": [
+                                                        {
+                                                        "id": "oui",
+                                                        "question": "prends ta température",
+                                                        "pageType": "rangeTemp",
+                                                        "answers": [{
+                                                                    "id": "37.0",
+                                                                    "pageType": "recap",
+                                                                    "question": "oui ou non",
+                                                                    "conclusion": "conclusion-physique-doc"
+                                                                    },
+                                                                    {
+                                                                    "id": "38.0",
+                                                                    "pageType": "recap",
+                                                                    "question": "oui ou non",
+                                                                    "conclusion": "urgence"
+                                                                    },
+                                                                    {
+                                                                    "id": "autre",
+                                                                    "pageType": "recap",
+                                                                    "question": "Recapitulatif",
+                                                                    "conclusion": "conclusion-physique-doc"
+                                                                    },
+                                                                    {
+                                                                    "id": "non",
+                                                                    "pageType": "rangeTemp",
+                                                                    "question": "prends ta température",
+                                                                    "answers": [{
+                                                                                "id": "37.0",
+                                                                                "pageType": "recap",
+                                                                                "question": "oui ou non",
+                                                                                "conclusion": "conclusion-physique-doc"
+                                                                                },
+                                                                                {
+                                                                                "id": "38.0",
+                                                                                "pageType": "recap",
+                                                                                "question": "oui ou non",
+                                                                                "conclusion": "urgence"
+                                                                                },
+                                                                                {
+                                                                                "id": "autre",
+                                                                                "pageType": "addSymptoms",
+                                                                                "question": "Description de vos symptomes",
+                                                                                "answers":[
+                                                                                           {
+                                                                                           "id": "headache",
+                                                                                           "pageType": "addSymptoms",
+                                                                                           "question": "Description de vos symptomes",
+                                                                                           "answers":[
+                                                                                                      {
+                                                                                                      "id": "suivant",
+                                                                                                      "pageType": "recap",
+                                                                                                      "conclusion": "conclusion-physique-doc"
+                                                                                                      
+                                                                                                      }
+                                                                                                      ]
+                                                                                           
+                                                                                           },
+                                                                                           {
+                                                                                           "id": "injury",
+                                                                                           "pageType": "addSymptoms",
+                                                                                           "question": "Description de vos symptomes",
+                                                                                           "answers":[
+                                                                                                      {
+                                                                                                      "id": "suivant",
+                                                                                                      "pageType": "recap",
+                                                                                                      "conclusion": "conclusion-physique-doc"
+                                                                                                      
+                                                                                                      }
+                                                                                                      ]
+                                                                                           
+                                                                                           },
+                                                                                           {
+                                                                                           "id": "high temperature",
+                                                                                           "pageType": "addSymptoms",
+                                                                                           "question": "Description de vos symptomes",
+                                                                                           "answers":[
+                                                                                                      {
+                                                                                                      "id": "suivant",
+                                                                                                      "pageType": "recap",
+                                                                                                      "conclusion": "conclusion-physique-doc"
+                                                                                                      
+                                                                                                      }
+                                                                                                      ]
+                                                                                           
+                                                                                           }
+                                                                                           ]
+                                                                                }
+                                                                                ]
+                                                                    },
+                                                                    {
+                                                                    "id": "non",
+                                                                    "pageType": "bodyMan",
+                                                                    "conclusion": "Parcours-normal"
+                                                                    }
+                                                                    ]
+                                                        },
+                                                        {
+                                                        "id": "non",
+                                                        "pageType": "bodyMan",
+                                                        "conclusion": "Parcours-normal"
+                                                        }
+                                                        ]
+                                            
+                                            
+                                            },
+                                            {
+                                            "id": "non",
+                                            "pageType": "bodyMan",
+                                            "conclusion": "Parcours-normal"
+                                            }
+                                            
+                                            ]
+                                }
+                                ]
+                    }
+                    ]
     },
-    "body": [
-             {
-             "jambeDroite":{
-             
-             },
-             "tete":{
-             
-             },
-             "corps":{
-             
-             },
-             "couilles":{
-             
-             },
-             "jambeGauche":{
-             
-             },
-             "brasGauche":{
-             
-             },
-             "brasDroit":{
-             
-             },
-             "dos":{
-             
-             }
-             }
-             ]
+    "Parcours-normal": [
+                        {
+                        "id": "jambeDroite",
+                        "pageType": "bodyMan",
+                        "question": "t'as mal jambe droite ?",
+                        "answer": [
+                                   {
+                                   "id": "oui",
+                                   "pageType": "precisionList",
+                                   "question": "où précisément ?",
+                                   "answer": [
+                                              {
+                                              "id": "loge posterieure",
+                                              "pageType": "doubleChoiceQuestion",
+                                              "question": "répétition avec intervals?",
+                                              "answers": [
+                                                          {
+                                                          "id": "oui",
+                                                          "pageType": "rangeIntensite",
+                                                          "question": "quelle intensité ?",
+                                                          "answers": [
+                                                                      {
+                                                                      "id": 1,
+                                                                      "pageType": "rangeTemp",
+                                                                      "question": "prends ta temperature?",
+                                                                      "answers": [
+                                                                                  {
+                                                                                  "id": "37.0",
+                                                                                  "pageType": "recap",
+                                                                                  "question": "oui ou non",
+                                                                                  "conclusion": "conclusion-physique-doc"
+                                                                                  },
+                                                                                  {
+                                                                                  "id": "38.0",
+                                                                                  "pageType": "recap",
+                                                                                  "question": "oui ou non",
+                                                                                  "conclusion": "urgence"
+                                                                                  },
+                                                                                  {
+                                                                                  "id": "autre",
+                                                                                  "pageType": "addSymptoms",
+                                                                                  "question": "Description de vos symptomes",
+                                                                                  "answers":[
+                                                                                             {
+                                                                                             "id": "headache",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             },
+                                                                                             {
+                                                                                             "id": "injury",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             },
+                                                                                             {
+                                                                                             "id": "high temperature",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             }
+                                                                                             ]
+                                                                                  }
+                                                                                  ]
+                                                                      },
+                                                                      {
+                                                                      "id": 2,
+                                                                      "pageType": "rangeTemp",
+                                                                      "question": "prends ta temperature?",
+                                                                      "answers": [
+                                                                                  {
+                                                                                  "id": "37.0",
+                                                                                  "pageType": "recap",
+                                                                                  "question": "oui ou non",
+                                                                                  "conclusion": "conclusion-physique-doc"
+                                                                                  },
+                                                                                  {
+                                                                                  "id": "38.0",
+                                                                                  "pageType": "recap",
+                                                                                  "question": "oui ou non",
+                                                                                  "conclusion": "urgence"
+                                                                                  },
+                                                                                  {
+                                                                                  "id": "autre",
+                                                                                  "pageType": "addSymptoms",
+                                                                                  "question": "Description de vos symptomes",
+                                                                                  "answers":[
+                                                                                             {
+                                                                                             "id": "headache",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             },
+                                                                                             {
+                                                                                             "id": "injury",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             },
+                                                                                             {
+                                                                                             "id": "high temperature",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             }
+                                                                                             ]
+                                                                                  }
+                                                                                  ]
+                                                                      },
+                                                                      {
+                                                                      "id": 3,
+                                                                      "pageType": "rangeTemp",
+                                                                      "question": "prends ta temperature?",
+                                                                      "answers": [
+                                                                                  {
+                                                                                  "id": "37.0",
+                                                                                  "pageType": "recap",
+                                                                                  "question": "oui ou non",
+                                                                                  "conclusion": "conclusion-physique-doc"
+                                                                                  },
+                                                                                  {
+                                                                                  "id": "38.0",
+                                                                                  "pageType": "recap",
+                                                                                  "question": "oui ou non",
+                                                                                  "conclusion": "urgence"
+                                                                                  },
+                                                                                  {
+                                                                                  "id": "autre",
+                                                                                  "pageType": "addSymptoms",
+                                                                                  "question": "Description de vos symptomes",
+                                                                                  "answers":[
+                                                                                             {
+                                                                                             "id": "headache",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             },
+                                                                                             {
+                                                                                             "id": "injury",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             },
+                                                                                             {
+                                                                                             "id": "high temperature",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             }
+                                                                                             ]
+                                                                                  }
+                                                                                  ]
+                                                                      },
+                                                                      {
+                                                                      "id": 4,
+                                                                      "pageType": "rangeTemp",
+                                                                      "question": "prends ta temperature?",
+                                                                      "answers": [
+                                                                                  {
+                                                                                  "id": "37.0",
+                                                                                  "pageType": "recap",
+                                                                                  "question": "oui ou non",
+                                                                                  "conclusion": "conclusion-physique-doc"
+                                                                                  },
+                                                                                  {
+                                                                                  "id": "38.0",
+                                                                                  "pageType": "recap",
+                                                                                  "question": "oui ou non",
+                                                                                  "conclusion": "urgence"
+                                                                                  },
+                                                                                  {
+                                                                                  "id": "autre",
+                                                                                  "pageType": "addSymptoms",
+                                                                                  "question": "Description de vos symptomes",
+                                                                                  "answers":[
+                                                                                             {
+                                                                                             "id": "headache",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             },
+                                                                                             {
+                                                                                             "id": "injury",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             },
+                                                                                             {
+                                                                                             "id": "high temperature",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             }
+                                                                                             ]
+                                                                                  }
+                                                                                  ]
+                                                                      },
+                                                                      {
+                                                                      "id": 5,
+                                                                      "pageType": "rangeTemp",
+                                                                      "question": "prends ta temperature?",
+                                                                      "answers": [
+                                                                                  {
+                                                                                  "id": "37.0",
+                                                                                  "pageType": "recap",
+                                                                                  "question": "oui ou non",
+                                                                                  "conclusion": "conclusion-physique-doc"
+                                                                                  },
+                                                                                  {
+                                                                                  "id": "38.0",
+                                                                                  "pageType": "recap",
+                                                                                  "question": "oui ou non",
+                                                                                  "conclusion": "urgence"
+                                                                                  },
+                                                                                  {
+                                                                                  "id": "autre",
+                                                                                  "pageType": "addSymptoms",
+                                                                                  "question": "Description de vos symptomes",
+                                                                                  "answers":[
+                                                                                             {
+                                                                                             "id": "headache",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             },
+                                                                                             {
+                                                                                             "id": "injury",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             },
+                                                                                             {
+                                                                                             "id": "high temperature",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             }
+                                                                                             ]
+                                                                                  }
+                                                                                  ]
+                                                                      },
+                                                                      {
+                                                                      "id": 6,
+                                                                      "pageType": "rangeTemp",
+                                                                      "question": "prends ta temperature?",
+                                                                      "answers": [
+                                                                                  {
+                                                                                  "id": "37.0",
+                                                                                  "pageType": "recap",
+                                                                                  "question": "oui ou non",
+                                                                                  "conclusion": "conclusion-physique-doc"
+                                                                                  },
+                                                                                  {
+                                                                                  "id": "38.0",
+                                                                                  "pageType": "recap",
+                                                                                  "question": "oui ou non",
+                                                                                  "conclusion": "urgence"
+                                                                                  },
+                                                                                  {
+                                                                                  "id": "autre",
+                                                                                  "pageType": "addSymptoms",
+                                                                                  "question": "Description de vos symptomes",
+                                                                                  "answers":[
+                                                                                             {
+                                                                                             "id": "headache",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             },
+                                                                                             {
+                                                                                             "id": "injury",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             },
+                                                                                             {
+                                                                                             "id": "high temperature",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             }
+                                                                                             ]
+                                                                                  }
+                                                                                  ]
+                                                                      },
+                                                                      {
+                                                                      "id": 7,
+                                                                      "pageType": "rangeTemp",
+                                                                      "question": "prends ta temperature?",
+                                                                      "answers": [
+                                                                                  {
+                                                                                  "id": "37.0",
+                                                                                  "pageType": "recap",
+                                                                                  "question": "oui ou non",
+                                                                                  "conclusion": "conclusion-physique-doc"
+                                                                                  },
+                                                                                  {
+                                                                                  "id": "38.0",
+                                                                                  "pageType": "recap",
+                                                                                  "question": "oui ou non",
+                                                                                  "conclusion": "urgence"
+                                                                                  },
+                                                                                  {
+                                                                                  "id": "autre",
+                                                                                  "pageType": "addSymptoms",
+                                                                                  "question": "Description de vos symptomes",
+                                                                                  "answers":[
+                                                                                             {
+                                                                                             "id": "headache",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             },
+                                                                                             {
+                                                                                             "id": "injury",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             },
+                                                                                             {
+                                                                                             "id": "high temperature",
+                                                                                             "pageType": "addSymptoms",
+                                                                                             "question": "Description de vos symptomes",
+                                                                                             "answers":[
+                                                                                                        {
+                                                                                                        "id": "suivant",
+                                                                                                        "pageType": "recap",
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        ]
+                                                                                             }
+                                                                                             ]
+                                                                                  }
+                                                                                  ]
+                                                                      },
+                                                                      {
+                                                                      "id": 8,
+                                                                      "pageType": "recap",
+                                                                      "conclusion": "urgence"
+                                                                      },
+                                                                      {
+                                                                      "id": 9,
+                                                                      "pageType": "recap",
+                                                                      "conclusion": "urgence"
+                                                                      },
+                                                                      {
+                                                                      "id": 10,
+                                                                      "pageType": "recap",
+                                                                      "conclusion": "urgence"
+                                                                      }
+                                                                      ]
+                                                          } ,
+                                                          {
+                                                          "id": "non",
+                                                          "question": "",
+                                                          "answers": []
+                                                          }
+                                                          ]
+                                              },
+                                              {
+                                              "id": "loge interne",
+                                              "answers": []
+                                              },
+                                              {
+                                              "id": "autre",
+                                              "answers": []
+                                              }
+                                              ]
+                                   }
+                                   ]
+                        }
+                        ]
 }

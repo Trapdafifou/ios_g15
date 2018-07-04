@@ -3,24 +3,23 @@ import SwiftyJSON
 
 class dataTransformer {
     
-    let url = Bundle.main.path(forResource: "../Model/data", ofType: "json")
-    
-    func transform(url:String )->[question]?{
+    func transform(){
+        let url = Bundle.main.path(forResource: "../Model/data", ofType: "json")
+        
         if (url != "") {
-           // let _: [question]
+            let _: question
             
-           // let jsonFilePath:NSString = Bundle.main.path(forResource:"../Model/data", ofType: "json")! as NSString
-            //let _:NSData = NSData(contentsOfFile: jsonFilePath as String) as! NSData
-            
-           // let json = JSON(data: jsonData as Data)
-          //  print(json)
-            
-            //print(json["question"]["question"] ?? "default")
-           // if let username = json["question"]["question"].string {
-            //    print(username)
-            //}
+            if let jsonFilePath = Bundle.main.path(forResource:"data", ofType: "json"){
+                do{
+                    let data = try Data(contentsOf: URL(fileURLWithPath: jsonFilePath), options: [])
+                    let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:question]
+                    print(json)
+                }catch{
+                    print("error")
+                }
+            }
         }
-        return nil
+        
     }
 }
 
