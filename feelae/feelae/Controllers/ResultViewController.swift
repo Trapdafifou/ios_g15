@@ -8,25 +8,36 @@
 
 import UIKit
 
-class ResultViewController: UIViewController {
-    
+class ResultViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
+
+
     let docImg = [UIImage(named:  "check"),UIImage(named:  "check"),UIImage(named:  "check")]
     let hours = ["16h50","17h05","17h10"]
     let name = ["Dr. Nozman","Dr. Velyne","Dr. Kuberg"]
     let spec = ["Médecin généraliste","Médecin généraliste","Médecin généraliste"]
     let availability = ["réserver","réserver","réserver"]
     let call = [UIImage(named:  "check"),UIImage(named:  "check"),UIImage(named:  "check")]
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return name.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view .
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
     
 
     /*
