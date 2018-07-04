@@ -7,21 +7,35 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-class question : NSObject{
+class Question : NSObject{
     
     var id: String
     var question: String?
-    var response: [question]?
+    var response: [Question]?
     var pageType: String
     var conclusion: String?
     
-    init( id: String, question: String, pageType: String, response: [question]?, conclusion: String?) {
+    init( id: String, question: String, pageType: String, response: [Question]?, conclusion: String?) {
         self.question = question
         self.id = id
         self.pageType = pageType
         self.response = response
         self.conclusion = conclusion
+    }
+    
+    init(json: JSON) {
+        self.question = json["question"].stringValue
+        self.id = json["id"].stringValue
+        self.pageType = json["pageType"].stringValue
+        self.conclusion = json["conclusion"].stringValue
+        self.response = []
+        
+        for response in json["answers"].arrayValue {
+            let answer = Question(json: response)
+            self.response?.append(answer)
+        }
     }
     
     func getQuestion() -> String? {
@@ -32,7 +46,7 @@ class question : NSObject{
         return pageType
     }
     
-    func getResponse() -> [question]? {
+    func getResponse() -> [Question]? {
         return response
     }
     

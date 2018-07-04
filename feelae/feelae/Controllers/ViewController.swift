@@ -9,9 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let dataTransfer: dataTransformer = dataTransformer()
+    let navigation: NavigationControllerDelegate = NavigationControllerDelegate()
+    var question : [Question]? = nil
+    var response: String = ""
+    
+    @IBAction func ButtonClicked(_ sender: UIButton) {
+        var mainQuestion = dataTransfer.transform()
+        var controllerToSend = navigation.ReturnPageType(question: mainQuestion!, response: "pass")
+        self.changeView(controller: controllerToSend!)
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -19,7 +32,9 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    func changeView(controller: UIViewController){
+        self.navigationController?.pushViewController(controller, animated: false)
+    }
 }
 

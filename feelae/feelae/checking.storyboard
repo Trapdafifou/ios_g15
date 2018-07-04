@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bt2-8Q-RGn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bt2-8Q-RGn">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--GrippeViewController-->
-        <scene sceneID="JsA-dy-s15">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Grippe" referencedIdentifier="GrippeViewController" id="mfZ-60-T58" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lQk-xu-vYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1048" y="-228"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="ofq-mj-bCO">
             <objects>
@@ -60,9 +51,6 @@
                                         <state key="normal" title="Retour">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="mfZ-60-T58" kind="showDetail" id="uhd-o2-Kqx"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c10-jg-jGX">
                                         <rect key="frame" x="195" y="573" width="155" height="30"/>
@@ -70,9 +58,6 @@
                                         <state key="normal" title="Suivant">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="wLR-ZB-3Qq" kind="show" id="Z3E-qY-Ss9"/>
-                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCf-DG-3yU">
                                         <rect key="frame" x="0.0" y="136.5" width="375" height="20"/>
@@ -119,14 +104,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CcW-N8-eBq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-337" y="-688"/>
-        </scene>
-        <!--TableView-->
-        <scene sceneID="jRf-bx-dT0">
-            <objects>
-                <viewControllerPlaceholder storyboardName="TableView" referencedIdentifier="TableView" id="wLR-ZB-3Qq" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="feb-rH-Qwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="90" y="-228"/>
         </scene>
     </scenes>
     <resources>

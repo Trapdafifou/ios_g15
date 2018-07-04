@@ -2,28 +2,38 @@
 import UIKit
 
 class SymptomeController: UIViewController {
-    @IBAction func ButtonTrueClicked(_ sender: UIButton) {
-        
-    }
     
-    @IBOutlet weak var ButtonFalse: UIButton!
-    @IBOutlet weak var ButtonYes: UIButton!
-    
-    @IBAction func ButtonFalseClicked(_ sender: UIButton) {
-        
-    }
     let dataTransfer: dataTransformer = dataTransformer()
+    let navigation: NavigationControllerDelegate = NavigationControllerDelegate()
+    var question : Question? = nil
     
+    @IBOutlet weak var YesButton: UIButton!
+    @IBOutlet weak var NoButton: UIButton!
+    
+    @IBAction func NoAction(_ sender: UIButton) {
+        var mainQuestion = dataTransfer.transform()
+        var pageType = mainQuestion?.getPageType()
+        //var controllerToSend = navigation.ReturnPageType(pageType: pageType!)
+        //self.changeView(controller: controllerToSend)
+    }
+    
+    @IBAction func YEsAction(_ sender: UIButton) {
+        var mainQuestion = dataTransfer.transform()
+        var pageType = mainQuestion?.getPageType()
+     //   var controllerToSend = navigation.ReturnPageType(pageType: pageType!)
+     //   self.changeView(controller: controllerToSend)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dataTransfer.transform()
         
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    func changeView(controller: UIViewController){
+        self.navigationController?.pushViewController(controller, animated: false)
     }
 }

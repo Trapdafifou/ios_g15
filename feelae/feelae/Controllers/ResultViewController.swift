@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ResultViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
+class ResultViewController: UIViewController{
 
 
     let docImg = [UIImage(named:  "check"),UIImage(named:  "check"),UIImage(named:  "check")]
@@ -19,13 +19,6 @@ class ResultViewController: UIViewController, UICollectionViewDataSource, UIColl
     let call = [UIImage(named:  "check"),UIImage(named:  "check"),UIImage(named:  "check")]
     
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return name.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
