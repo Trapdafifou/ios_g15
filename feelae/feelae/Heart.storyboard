@@ -1,7 +1,51 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U4g-PX-ALB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Heart View Controller-->
+        <scene sceneID="hJX-vo-3Cd">
+            <objects>
+                <viewController storyboardIdentifier="HearViewController" id="U4g-PX-ALB" customClass="HeartViewController" customModule="feelae" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tmS-8r-Vxa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Température corporelle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv2-d8-O5j">
+                                <rect key="frame" x="25" y="63" width="325" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suivant votre fréquence cardiaque nous allons pouvoir diagnostiqué ou valider différent symptome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2e-qu-Jhx">
+                                <rect key="frame" x="25" y="97" width="325" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="08J-wf-g2k" firstAttribute="trailing" secondItem="lv2-d8-O5j" secondAttribute="trailing" constant="25" id="TPq-E0-qqK"/>
+                            <constraint firstItem="N2e-qu-Jhx" firstAttribute="top" secondItem="lv2-d8-O5j" secondAttribute="bottom" constant="13" id="e3V-yv-WOG"/>
+                            <constraint firstItem="lv2-d8-O5j" firstAttribute="leading" secondItem="08J-wf-g2k" secondAttribute="leading" constant="25" id="g4q-o5-5vN"/>
+                            <constraint firstItem="N2e-qu-Jhx" firstAttribute="leading" secondItem="08J-wf-g2k" secondAttribute="leading" constant="25" id="lnl-zk-VR7"/>
+                            <constraint firstItem="lv2-d8-O5j" firstAttribute="top" secondItem="08J-wf-g2k" secondAttribute="top" constant="43" id="upY-zz-tsQ"/>
+                            <constraint firstItem="08J-wf-g2k" firstAttribute="trailing" secondItem="N2e-qu-Jhx" secondAttribute="trailing" constant="25" id="wmH-dr-lCB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="08J-wf-g2k"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vDT-XC-wR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93" y="-246"/>
+        </scene>
+    </scenes>
 </document>
