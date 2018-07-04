@@ -19,6 +19,7 @@ class HeartViewController: UIViewController, URLSessionDownloadDelegate {
         label.text = "Start"
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 22)
+        label.isUserInteractionEnabled = true
         return label
     }()
     lazy var titleLabel: UILabel = {
@@ -72,7 +73,7 @@ class HeartViewController: UIViewController, URLSessionDownloadDelegate {
         shapeLayer.transform = CATransform3DMakeRotation(-CGFloat.pi/2, 0, 0, 1)
         view.layer.addSublayer(shapeLayer)
         
-        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
+        percentageLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
         
         view.addSubview(percentageLabel)
         view.addSubview(titleLabel)
