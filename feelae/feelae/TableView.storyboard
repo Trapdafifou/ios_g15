@@ -51,9 +51,6 @@
                                         <state key="normal" title="Retour">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="gna-A7-Y5F" kind="show" id="UQp-5U-xJg"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukM-9I-dU9">
                                         <rect key="frame" x="195" y="573" width="155" height="30"/>
@@ -61,9 +58,6 @@
                                         <state key="normal" title="Suivant">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="6S6-Ah-8dF" kind="show" id="mJI-Sp-uwh"/>
-                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xss-Jh-xSI">
                                         <rect key="frame" x="0.0" y="157.5" width="375" height="20"/>
@@ -134,22 +128,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1AQ-IC-KdI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="276" y="16"/>
-        </scene>
-        <!--CheckingViewController-->
-        <scene sceneID="5MU-fc-4NG">
-            <objects>
-                <viewControllerPlaceholder storyboardName="checking" referencedIdentifier="CheckingViewController" id="gna-A7-Y5F" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qVO-XS-o37" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="94" y="473"/>
-        </scene>
-        <!--PickerViewController-->
-        <scene sceneID="Ypj-CM-mgj">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Picker" referencedIdentifier="PickerViewController" id="6S6-Ah-8dF" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y9A-wa-o6h" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="544" y="472"/>
         </scene>
     </scenes>
     <resources>

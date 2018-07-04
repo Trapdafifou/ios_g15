@@ -9,10 +9,20 @@
 import UIKit
 
 class CheckingController: UIViewController {
+    @IBOutlet weak var ReturnButton: UIButton!
     
+    @IBOutlet weak var ButtonSuivant: UIButton!
     let navigation: NavigationControllerDelegate = NavigationControllerDelegate()
+    @IBAction func ReturnButtonChecked(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
     var response: String = ""
     var question : Question? = nil
+    
+    @IBAction func ButtonSuivantChecked(_ sender: UIButton) {
+        var controllerToSend = navigation.ReturnPageType(question: question!, response: "oui")
+        self.changeView(controller: controllerToSend!)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,5 +35,4 @@ class CheckingController: UIViewController {
     func changeView(controller: UIViewController){
         self.navigationController?.pushViewController(controller, animated: false)
     }
-    
 }

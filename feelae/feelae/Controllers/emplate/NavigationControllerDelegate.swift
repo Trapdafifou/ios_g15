@@ -16,17 +16,16 @@ class NavigationControllerDelegate {
     
     func ReturnPageType(question: Question, response: String) -> UIViewController?{
         self.question = question
+        print(response)
         // return double choice question page
         if( response != "pass"){
             for responses in (self.question?.getResponse()!)!{
                 if(responses.getId()  == response){
                     self.question = responses
-                    print(self.question?.getId(), "id1")
                     break
                 }
             }
         }
-        print(self.question?.getId(), "id2")
         
         if( self.question?.getPageType() == "doubleChoiceQuestion" ){
             let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -35,10 +34,26 @@ class NavigationControllerDelegate {
                 controller.question = self.question
             
             return controller
+            
         }else if (self.question?.getPageType() == "bodyMan"){
             let storyboard:UIStoryboard = UIStoryboard(name: "checking", bundle: nil)
             
             let controller = storyboard.instantiateViewController(withIdentifier: "CheckingController") as! CheckingController
+            controller.question = self.question
+            
+            return controller
+            
+        }else if (self.question?.getPageType() == "bodyMan-checkup"){
+            let storyboard:UIStoryboard = UIStoryboard(name: "checking", bundle: nil)
+            
+            let controller = storyboard.instantiateViewController(withIdentifier: "CheckingController") as! CheckingController
+            controller.question = self.question
+            
+            return controller
+        }else if (self.question?.getPageType() == "rangeTemp"){
+            let storyboard:UIStoryboard = UIStoryboard(name: "rangeTemp", bundle: nil)
+            
+            let controller = storyboard.instantiateViewController(withIdentifier: "RangeTempController") as! RangeTempController
             controller.question = self.question
             
             return controller
