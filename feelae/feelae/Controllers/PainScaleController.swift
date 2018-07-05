@@ -8,11 +8,16 @@
 
 import UIKit
 
+protocol PainBodyToPainScaleProtocol:class {
+    func scaleClicked(value: Int)
+}
+
 class PainScaleController: UIViewController {
-    
     
     @IBOutlet var painScale: [UIButton]!
     
+     weak var delegate:PainBodyToPainScaleProtocol? = nil
+    let painScaleIndex: Int = 0
     
     
     override func viewDidLoad() {
@@ -29,14 +34,13 @@ class PainScaleController: UIViewController {
     
     
     func setScale () {
-        var indexTab = 0
-        
-        
         for scale in painScale {
-            scale.tag = indexTab
-            
-            indexTab += 1
+            scale.addTarget(self, action: #selector(scaleClicked(_:)), for: .touchUpInside)
         }
+    }
+    
+    @objc func scaleClicked(_ sender:UIButton!) {
+        delegate?.scaleClicked(value: sender.tag)
     }
 }
 
