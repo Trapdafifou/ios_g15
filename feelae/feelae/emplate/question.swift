@@ -4,7 +4,7 @@
 //
 //  Created by victor billard-madrieres on 03/07/2018.
 //  Copyright © 2018 Thibaut Marsal. All rights reserved.
-//
+
 import Foundation
 import SwiftyJSON
 
@@ -15,11 +15,15 @@ class Question : NSObject{
     var response: [Question]?
     var pageType: String
     var conclusion: String?
+    var subTitle: String?
+    var title: String?
     
-    init( id: String, question: String, pageType: String, response: [Question]?, conclusion: String?) {
+    init( id: String, question: String, pageType: String, response: [Question]?, conclusion: String?, title: String?, subTitle: String?) {
         self.question = question
         self.id = id
         self.pageType = pageType
+        self.subTitle = subTitle
+        self.title = title
         self.response = response
         self.conclusion = conclusion
     }
@@ -29,6 +33,8 @@ class Question : NSObject{
         self.id = json["id"].stringValue
         self.pageType = json["pageType"].stringValue
         self.conclusion = json["conclusion"].stringValue
+        self.title = json["title"].stringValue
+        self.subTitle = json["subTitle"].stringValue
         self.response = []
         
         for response in json["answers"].arrayValue {
@@ -55,5 +61,13 @@ class Question : NSObject{
     
     func getId() -> String {
         return id
+    }
+    
+    func getSubTitle() -> String? {
+        return subTitle
+    }
+    
+    func getTitle() -> String? {
+        return title
     }
 }

@@ -13,7 +13,6 @@ class dataTransformer {
                 do{
                     let data = try Data(contentsOf: URL(fileURLWithPath: jsonFilePath), options: [])
                     let json = JSON(data)
-                    
                     let mainQuestion = Question(json: json["Seasonal"])
                     return mainQuestion
                 }catch{
