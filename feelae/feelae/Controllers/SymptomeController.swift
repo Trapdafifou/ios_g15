@@ -9,6 +9,7 @@ class SymptomeController: UIViewController {
     @IBOutlet weak var SubTitleLabel: UILabel!
     @IBOutlet weak var TitleLabel: UILabel!
     @IBOutlet weak var QuestionLabel: UILabel!
+    
     @IBOutlet weak var ReturnButton: UIButton!
     @IBOutlet weak var YesButton: UIButton!
     @IBOutlet weak var NoButton: UIButton!
@@ -31,6 +32,9 @@ class SymptomeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.QuestionLabel.text = self.question?.getQuestion()
+        self.TitleLabel.text = self.question?.getTitle()
+        self.SubTitleLabel.text = self.question?.getSubTitle()
     }
 
     override func didReceiveMemoryWarning() {
