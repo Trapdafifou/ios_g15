@@ -13,6 +13,8 @@ class ResultViewController: UIViewController{
     let dataTransfer: dataTransformer = dataTransformer()
     let navigation: NavigationControllerDelegate = NavigationControllerDelegate()
     var question : Question? = nil
+
+    @IBOutlet weak var titleResult: UILabel!
     
     let docImg = [UIImage(named:  "check"),UIImage(named:  "check"),UIImage(named:  "check")]
     let hours = ["16h50","17h05","17h10"]
@@ -24,6 +26,7 @@ class ResultViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.titleResult.text = question?.getTitle()
 
         // Do any additional setup after loading the view .
     }
