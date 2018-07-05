@@ -11,6 +11,8 @@ class RangeTempController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var sliderLabel: UILabel!
     
+    @IBOutlet weak var rangeSubtitle: UILabel!
+    @IBOutlet weak var rangeTitle: UILabel!
     @IBOutlet weak var slider: UISlider! {
         didSet{
             slider.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi / 2))
@@ -41,6 +43,8 @@ class RangeTempController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.rangeTitle.text = question?.getTitle()
+        self.rangeSubtitle.text = question?.getSubTitle()
     }
     
     override func didReceiveMemoryWarning() {

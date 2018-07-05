@@ -139,6 +139,8 @@
                         <viewLayoutGuide key="safeArea" id="yIg-Ci-vcZ"/>
                     </view>
                     <connections>
+                        <outlet property="rangeSubtitle" destination="F5X-U2-18o" id="cwB-Aa-iXE"/>
+                        <outlet property="rangeTitle" destination="Prh-d1-ZZI" id="xqj-PG-xTL"/>
                         <outlet property="slider" destination="TCY-kW-8x5" id="dlt-0S-jDN"/>
                         <outlet property="sliderLabel" destination="9n0-b9-jvb" id="H86-JV-Jor"/>
                     </connections>

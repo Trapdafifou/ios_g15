@@ -15,6 +15,7 @@ class ResultViewController: UIViewController{
     var question : Question? = nil
 
     @IBOutlet weak var titleResult: UILabel!
+    @IBOutlet weak var subtitleResult: UILabel!
     
     let docImg = [UIImage(named:  "check"),UIImage(named:  "check"),UIImage(named:  "check")]
     let hours = ["16h50","17h05","17h10"]
@@ -27,6 +28,7 @@ class ResultViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.titleResult.text = question?.getTitle()
+        self.subtitleResult.text = question?.getSubTitle()
 
         // Do any additional setup after loading the view .
     }

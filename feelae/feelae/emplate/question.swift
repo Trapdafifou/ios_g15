@@ -34,7 +34,7 @@ class Question : NSObject{
         self.pageType = json["pageType"].stringValue
         self.conclusion = json["conclusion"].stringValue
         self.title = json["title"].stringValue
-        self.subTitle = json["subTitle"].stringValue
+        self.subTitle = json["subtitle"].stringValue
         self.response = []
         
         for response in json["answers"].arrayValue {
