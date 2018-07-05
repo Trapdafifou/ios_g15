@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CheckingController: UIViewController {
+class CheckingController: UIViewController, ChildToParentProtocol{
     
     @IBOutlet weak var ReturnButton: UIButton!
     @IBOutlet weak var ButtonSuivant: UIButton!
@@ -27,6 +27,13 @@ class CheckingController: UIViewController {
         self.changeView(controller: controllerToSend!)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? BodyController,
+            segue.identifier == "CheckinToBody" {
+            vc.delegate = self
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -37,5 +44,10 @@ class CheckingController: UIViewController {
     
     func changeView(controller: UIViewController){
         self.navigationController?.pushViewController(controller, animated: false)
+    }
+    
+    func buttonClicked(value: String?) {
+        var controllerToSend = navigation.ReturnPageType(question: question!, response: "jambeDroite")
+        self.changeView(controller: controllerToSend!)
     }
 }

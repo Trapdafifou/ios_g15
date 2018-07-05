@@ -18,14 +18,13 @@ extension UIImage {
     }
 }
 
-protocol BodyDataToMaster {
-    func changeLabel(text:String)
+protocol ChildToParentProtocol:class {
+    func buttonClicked(value: String?)
 }
 
 class BodyController: UIViewController {
-    let dataTransfer: dataTransformer = dataTransformer()
-    let navigation: NavigationControllerDelegate = NavigationControllerDelegate()
-    var question : Question? = nil
+    
+    weak var delegate:ChildToParentProtocol? = nil
     
     @IBOutlet weak var bodyPartName: UILabel!
     @IBOutlet var buttonsTab: [UIButton]!
@@ -51,6 +50,7 @@ class BodyController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        print(delegate)
         setButton()
     }
 
@@ -83,8 +83,7 @@ class BodyController: UIViewController {
         bodyPartName.layer.zPosition = 1;
         sender.alpha = 1
         
-        /* let controllerToSend = navigation.ReturnPageType(question: question!, response: "jambeDroite")
-        self.changeView(controller: controllerToSend!) */
+        delegate?.buttonClicked(value: bodyPartTab[sender.tag])
     }
     
     func redrawLabel(label: UILabel) {

@@ -99,7 +99,7 @@
                                 <rect key="frame" x="28" y="185" width="318" height="442"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <segue destination="pgr-vr-Ve3" kind="embed" id="47X-jw-wPO"/>
+                                    <segue destination="pgr-vr-Ve3" kind="embed" identifier="CheckinToBody" id="47X-jw-wPO"/>
                                 </connections>
                             </containerView>
                         </subviews>
