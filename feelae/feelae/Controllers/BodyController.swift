@@ -23,7 +23,9 @@ protocol BodyDataToMaster {
 }
 
 class BodyController: UIViewController {
-    
+    let dataTransfer: dataTransformer = dataTransformer()
+    let navigation: NavigationControllerDelegate = NavigationControllerDelegate()
+    var question : Question? = nil
     
     @IBOutlet weak var bodyPartName: UILabel!
     @IBOutlet var buttonsTab: [UIButton]!
@@ -79,10 +81,10 @@ class BodyController: UIViewController {
         redrawLabel(label: bodyPartName)
         bodyPartName.center = CGPoint(x: posX, y:posY)
         bodyPartName.layer.zPosition = 1;
-        
-        
-        
         sender.alpha = 1
+        
+        /* let controllerToSend = navigation.ReturnPageType(question: question!, response: "jambeDroite")
+        self.changeView(controller: controllerToSend!) */
     }
     
     func redrawLabel(label: UILabel) {
@@ -102,6 +104,10 @@ class BodyController: UIViewController {
     func fillButton (button: UIButton) {
         let image = UIImage(named: "radio-on-button")!.resized(newSize: CGSize(width: 19, height: 19))
         button.setImage(image, for: .normal)
+    }
+    
+    func changeView(controller: UIViewController){
+        self.navigationController?.pushViewController(controller, animated: false)
     }
 
 }
