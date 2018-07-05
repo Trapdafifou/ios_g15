@@ -17,7 +17,7 @@ class CheckingController: UIViewController, ChildToParentProtocol{
     let navigation: NavigationControllerDelegate = NavigationControllerDelegate()
     @IBAction func ReturnButtonChecked(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
-    }CheckListController
+    }
     
     var response: String = ""
     var question : Question? = nil
@@ -26,7 +26,7 @@ class CheckingController: UIViewController, ChildToParentProtocol{
         if(question?.getSubTitle() == "Avez-vous mal à la zone présentée ci-dessous ?"){
             let controllerToSend = navigation.ReturnPageType(question: self.question!, response: "oui")
             self.changeView(controller: controllerToSend!)
-        }else if(question?.getSubTitle() == "jambeDroite"){
+        }else if(question?.getSubTitle() == "Sélectionnez la zone douloureuse"){
             let controllerToSend = navigation.ReturnPageType(question: self.question!, response: "jambeDroite-precision")
             self.changeView(controller: controllerToSend!)
         }

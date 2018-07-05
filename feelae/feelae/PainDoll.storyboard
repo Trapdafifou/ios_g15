@@ -288,7 +288,7 @@
         <!--Pain Scale Controller-->
         <scene sceneID="LfY-hC-Jgw">
             <objects>
-                <viewController id="kGj-sd-o76" customClass="PainScaleController" customModule="feelae" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PainScaleController" id="kGj-sd-o76" customClass="PainScaleController" customModule="feelae" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L7I-pY-kXl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="129"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
