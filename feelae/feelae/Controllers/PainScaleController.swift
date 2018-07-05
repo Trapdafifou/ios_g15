@@ -9,7 +9,7 @@
 import UIKit
 
 protocol PainBodyToPainScaleProtocol:class {
-    func scaleClicked(value: Int)
+    func scaleClickedValue(value: Int)
 }
 
 class PainScaleController: UIViewController {
@@ -24,7 +24,7 @@ class PainScaleController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
+        setScale()
     }
     
     override func didReceiveMemoryWarning() {
@@ -40,7 +40,9 @@ class PainScaleController: UIViewController {
     }
     
     @objc func scaleClicked(_ sender:UIButton!) {
-        delegate?.scaleClicked(value: sender.tag)
+        
+        sender.backgroundColor = UIColor(red:247, green:134, blue:45, alpha:1.0)
+        delegate?.scaleClickedValue(value: sender.tag)
     }
 }
 

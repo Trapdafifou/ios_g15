@@ -33,8 +33,7 @@ class PainBodyController: UIViewController, PainBodyToPainScaleProtocol {
         // Dispose of any resources that can be recreated.
     }
     
-    func scaleClicked(value: Int) {
-        print(value)
+    func scaleClickedValue(value: Int) {
         var controllerToSend = navigation.ReturnPageType(question: question!, response: String(value))
         self.changeView(controller: controllerToSend!)
     }
