@@ -12,6 +12,7 @@ class CheckingController: UIViewController {
     
     @IBOutlet weak var ReturnButton: UIButton!
     @IBOutlet weak var ButtonSuivant: UIButton!
+    @IBOutlet weak var BodyContainer: UIView!
     
     let navigation: NavigationControllerDelegate = NavigationControllerDelegate()
     @IBAction func ReturnButtonChecked(_ sender: UIButton) {
