@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     let dataTransfer: dataTransformer = dataTransformer()
     let navigation: NavigationControllerDelegate = NavigationControllerDelegate()
     var response: String = ""
+    @IBOutlet weak var LogoButton: UIButton!
     
     @IBAction func ButtonClicked(_ sender: UIButton) {
         var mainQuestion = dataTransfer.transform()
@@ -22,6 +23,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        LogoButton.setImage(UIImage(named: ""), for: .normal)
+
         
         // Do any additional setup after loading the view, typically from a nib.
     }
