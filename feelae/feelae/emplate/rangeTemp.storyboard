@@ -17,48 +17,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QL-AK-0WN">
-                                <rect key="frame" x="25" y="601" width="155" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wg5-kh-phi">
+                                <rect key="frame" x="25" y="590" width="155" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.25098039220000001" green="0.30196078430000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Retour">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="ReturnButtonChecked:" destination="cVc-Rd-4i1" eventType="touchUpInside" id="Hfi-cj-pyj"/>
+                                    <action selector="ReturnButtonChecked:" destination="cVc-Rd-4i1" eventType="touchUpInside" id="krR-kv-8og"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRV-Jw-Wl3">
-                                <rect key="frame" x="195" y="601" width="155" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smk-J5-JGo">
+                                <rect key="frame" x="204" y="590" width="155" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.25098039220000001" green="0.30196078430000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Suivant">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="viewTapped:" destination="cVc-Rd-4i1" eventType="touchUpInside" id="UZr-hQ-ElP"/>
-                                </connections>
                             </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rgO-cY-fDg">
-                                <rect key="frame" x="40" y="583" width="295" height="2"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="TGv-yN-kxB"/>
-                                </constraints>
-                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="cRV-Jw-Wl3" firstAttribute="width" secondItem="8QL-AK-0WN" secondAttribute="width" id="29y-62-f7R"/>
-                            <constraint firstItem="cRV-Jw-Wl3" firstAttribute="leading" secondItem="8QL-AK-0WN" secondAttribute="trailing" constant="15" id="bfH-Z1-Zjs"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jgs-os-Mhn"/>
                     </view>
                     <connections>
-                        <outlet property="ReturnButton" destination="8QL-AK-0WN" id="kDz-qA-cOn"/>
-                        <outlet property="nextButton" destination="cRV-Jw-Wl3" id="eud-pg-e4T"/>
+                        <outlet property="ReturnButton" destination="wg5-kh-phi" id="ai7-ca-20J"/>
+                        <outlet property="nextButton" destination="Smk-J5-JGo" id="Ov7-ik-nbG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCn-TR-zhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="17" y="133"/>
+            <point key="canvasLocation" x="16.800000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>

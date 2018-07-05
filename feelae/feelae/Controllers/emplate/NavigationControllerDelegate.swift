@@ -16,7 +16,7 @@ class NavigationControllerDelegate {
     
     func ReturnPageType(question: Question, response: String) -> UIViewController?{
         self.question = question
-        print(response)
+
         // return double choice question page
         if( response != "pass"){
             for responses in (self.question?.getResponse()!)!{
