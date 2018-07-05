@@ -327,6 +327,22 @@
                                 
                                 ]
                     
+                    },
+                    {
+                    
+                    "id": "non",
+                    
+                    "title": "Où avez-vous mal ?",
+                    
+                    "subtitle": "Sélectionnez la zone douloureuse",
+                    
+                    "question": "",
+                    "conclusion": "Parcours-normal",
+                    
+                    "pageType": "bodyMan",
+                    
+                    "answers": []
+                    
                     }
                     
                     ]
