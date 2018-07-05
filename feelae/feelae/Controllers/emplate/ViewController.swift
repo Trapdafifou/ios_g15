@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        LogoButton.setImage(UIImage(named: ""), for: .normal)
+        LogoButton.setImage(UIImage(named: "logo_fullname"), for: .normal)
 
         
         // Do any additional setup after loading the view, typically from a nib.
