@@ -80,9 +80,9 @@ class NavigationControllerDelegate {
             
             return controller
         }else if (self.question?.getPageType() == "rangeIntensite"){
-            let storyboard:UIStoryboard = UIStoryboard(name: "TableView", bundle: nil)
+            let storyboard:UIStoryboard = UIStoryboard(name: "PainDoll", bundle: nil)
             
-            let controller = storyboard.instantiateViewController(withIdentifier: "CheckListViewController") as! CheckListViewController
+            let controller = storyboard.instantiateViewController(withIdentifier: "PainScaleController") as! PainScaleController
             
             controller.question = self.question
             

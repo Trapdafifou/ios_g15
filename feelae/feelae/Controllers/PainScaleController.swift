@@ -13,6 +13,8 @@ class PainScaleController: UIViewController {
     
     @IBOutlet var painScale: [UIButton]!
     
+    var question : Question? = nil
+    var response = ""
     
     
     override func viewDidLoad() {

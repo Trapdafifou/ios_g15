@@ -6,6 +6,9 @@ class SymptomeController: UIViewController {
     let navigation: NavigationControllerDelegate = NavigationControllerDelegate()
     var question : Question? = nil
     
+    @IBOutlet weak var SubTitleLabel: UILabel!
+    @IBOutlet weak var TitleLabel: UILabel!
+    @IBOutlet weak var QuestionLabel: UILabel!
     @IBOutlet weak var ReturnButton: UIButton!
     @IBOutlet weak var YesButton: UIButton!
     @IBOutlet weak var NoButton: UIButton!

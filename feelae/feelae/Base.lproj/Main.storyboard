@@ -224,7 +224,10 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="NoButton" destination="gOH-9J-1hg" id="SkB-dI-yZX"/>
+                        <outlet property="QuestionLabel" destination="93d-Zp-aUc" id="lfc-F8-70L"/>
                         <outlet property="ReturnButton" destination="1qH-RB-hwe" id="tnl-Ua-lOK"/>
+                        <outlet property="SubTitleLabel" destination="N7O-GG-zjt" id="2ln-4n-7Cm"/>
+                        <outlet property="TitleLabel" destination="o0i-Fv-fI6" id="nC1-S5-EnG"/>
                         <outlet property="YesButton" destination="k8z-YA-rcj" id="FQ0-pJ-odc"/>
                     </connections>
                 </viewController>
