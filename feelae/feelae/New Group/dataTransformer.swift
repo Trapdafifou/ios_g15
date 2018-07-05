@@ -22,6 +22,19 @@ class dataTransformer {
         }
         return nil
     }
+    
+    func getNormalWorkflow()->Question? {
+        do{
+            let jsonFilePath = Bundle.main.path(forResource:"data", ofType: "json")
+            let data = try Data(contentsOf: URL(fileURLWithPath: jsonFilePath!), options: [])
+            let json = JSON(data)
+            let mainQuestion = Question(json: json["Parcours-normal"])
+            return mainQuestion
+        }catch{
+            print("error")
+        }
+        return nil
+    }
 }
 
 

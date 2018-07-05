@@ -26,7 +26,11 @@ class NavigationControllerDelegate {
                 }
             }
         }
-
+        
+        if( self.question?.getConclusion() == "Parcours-normal" ){
+            self.question = dataTransfer.getNormalWorkflow()
+        }
+        
         if( self.question?.getPageType() == "doubleChoiceQuestion" ){
             let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             

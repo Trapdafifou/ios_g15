@@ -24,7 +24,7 @@
                     
                     "question": "",
                     
-                    "pageType": "bodyMan",
+                    "pageType": "bodyMan-checkup",
                     
                     "answers": [
                                 
@@ -38,7 +38,7 @@
                                 
                                 "question": "",
                                 
-                                "pageType": "bodyMan",
+                                "pageType": "bodyMan-checkup",
                                 
                                 "answers": [
                                             
@@ -337,6 +337,7 @@
                     "subtitle": "Sélectionnez la zone douloureuse",
                     
                     "question": "",
+                    
                     "conclusion": "Parcours-normal",
                     
                     "pageType": "bodyMan",
@@ -349,8 +350,7 @@
         
     },
     
-    "Parcours-normal": [
-                        
+    "Parcours-normal":
                         {
                         
                         "id": "jambeDroite",
@@ -367,7 +367,7 @@
                                    
                                    {
                                    
-                                   "id": "oui",
+                                   "id": "jambeDroite",
                                    
                                    "title": "Précisez la zone douloureuse",
                                    
@@ -1665,7 +1665,4 @@
                                    ]
                         
                         }
-                        
-                        ]
-    
 }
