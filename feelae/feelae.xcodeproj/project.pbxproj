@@ -13,6 +13,9 @@
 		531AFA0320EA283300E680DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 531AFA0220EA283300E680DF /* Assets.xcassets */; };
 		531AFA0620EA283300E680DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531AFA0420EA283300E680DF /* LaunchScreen.storyboard */; };
 		531AFA0F20EA29A500E680DF /* SymptomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AFA0E20EA29A500E680DF /* SymptomeController.swift */; };
+		53882B3220EE05F6001318D6 /* BodyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53882B3120EE05F6001318D6 /* BodyController.swift */; };
+		53882B3420EE06CB001318D6 /* PainScaleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53882B3320EE06CB001318D6 /* PainScaleController.swift */; };
+		53882B3620EE08CE001318D6 /* PainDollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53882B3520EE08CE001318D6 /* PainDollController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		531AFA0520EA283300E680DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		531AFA0720EA283300E680DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		531AFA0E20EA29A500E680DF /* SymptomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomeController.swift; sourceTree = "<group>"; };
+		53882B3120EE05F6001318D6 /* BodyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyController.swift; sourceTree = "<group>"; };
+		53882B3320EE06CB001318D6 /* PainScaleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainScaleController.swift; sourceTree = "<group>"; };
+		53882B3520EE08CE001318D6 /* PainDollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainDollController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,9 @@
 			children = (
 				531AF9FD20EA283200E680DF /* ViewController.swift */,
 				531AFA0E20EA29A500E680DF /* SymptomeController.swift */,
+				53882B3120EE05F6001318D6 /* BodyController.swift */,
+				53882B3320EE06CB001318D6 /* PainScaleController.swift */,
+				53882B3520EE08CE001318D6 /* PainDollController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -147,7 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				531AF9FE20EA283200E680DF /* ViewController.swift in Sources */,
+				53882B3220EE05F6001318D6 /* BodyController.swift in Sources */,
+				53882B3420EE06CB001318D6 /* PainScaleController.swift in Sources */,
 				531AF9FC20EA283200E680DF /* AppDelegate.swift in Sources */,
+				53882B3620EE08CE001318D6 /* PainDollController.swift in Sources */,
 				531AFA0F20EA29A500E680DF /* SymptomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
