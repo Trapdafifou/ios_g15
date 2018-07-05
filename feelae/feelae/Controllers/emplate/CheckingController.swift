@@ -23,7 +23,6 @@ class CheckingController: UIViewController, ChildToParentProtocol{
     var question : Question? = nil
     
     @IBAction func ButtonSuivantChecked(_ sender: UIButton) {
-        print(self.question?.getTitle())
         let controllerToSend = navigation.ReturnPageType(question: self.question!, response: "jambeDroite-precision")
         self.changeView(controller: controllerToSend!)
     }

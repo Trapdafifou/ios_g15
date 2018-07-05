@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Check List View-->
+        <!--Check List View Controller-->
         <scene sceneID="VqQ-fy-gdS">
             <objects>
-                <viewController storyboardIdentifier="TableView" id="Gp6-df-qAG" customClass="CheckListView" customModule="feelae" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CheckListViewController" id="Gp6-df-qAG" customClass="CheckListViewController" customModule="feelae" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="CheckListView" id="DeQ-zx-I3E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,6 +51,9 @@
                                         <state key="normal" title="Retour">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="PreviousChecked:" destination="Gp6-df-qAG" eventType="touchUpInside" id="mCL-5j-4vU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukM-9I-dU9">
                                         <rect key="frame" x="195" y="573" width="155" height="30"/>
@@ -58,6 +61,9 @@
                                         <state key="normal" title="Suivant">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="NextChecked:" destination="Gp6-df-qAG" eventType="touchUpInside" id="aFj-Qk-qRX"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xss-Jh-xSI">
                                         <rect key="frame" x="0.0" y="157.5" width="375" height="20"/>
@@ -122,6 +128,8 @@
                         <viewLayoutGuide key="safeArea" id="eiu-ep-IQL"/>
                     </view>
                     <connections>
+                        <outlet property="ButtonNext" destination="ukM-9I-dU9" id="tub-Z7-Zt4"/>
+                        <outlet property="PreviousButton" destination="g6d-Pm-03e" id="mct-7p-dYY"/>
                         <outlet property="tableView" destination="LhZ-e2-HR4" id="aWg-XR-LM6"/>
                     </connections>
                 </viewController>
