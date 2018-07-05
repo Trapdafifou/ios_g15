@@ -10,7 +10,6 @@
 		0515B3EC20ED2C2600D1A3FA /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515B3EB20ED2C2500D1A3FA /* NavigationControllerDelegate.swift */; };
 		0515B3EE20ED55DA00D1A3FA /* CheckingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515B3ED20ED55DA00D1A3FA /* CheckingController.swift */; };
 		055103CF20ECED3B009F244E /* PainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055103CE20ECED32009F244E /* PainController.swift */; };
-		05722A7A20EE09A900C0803D /* dataTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05722A7920EE09A900C0803D /* dataTransformer.swift */; };
 		05722A7D20EE09B800C0803D /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 05722A7B20EE09B800C0803D /* data.json */; };
 		05722A7E20EE09B800C0803D /* question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05722A7C20EE09B800C0803D /* question.swift */; };
 		05722A8520EE0BBE00C0803D /* BodyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05722A7F20EE0BB800C0803D /* BodyController.swift */; };
@@ -30,6 +29,10 @@
 		1E54C56F20EC311B00D87FC2 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E54C56E20EC311B00D87FC2 /* PickerViewController.swift */; };
 		1EB912F220ECB48400239F69 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB912F120ECB48400239F69 /* Result.storyboard */; };
 		1EB912F420ECCD4300239F69 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB912F320ECCD4300239F69 /* ResultViewController.swift */; };
+		1ED212E020EE497D005D2EF6 /* dataTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED212DF20EE497D005D2EF6 /* dataTransformer.swift */; };
+		1ED212E620EE4A34005D2EF6 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1ED212E320EE4A32005D2EF6 /* Raleway-Bold.ttf */; };
+		1ED212E720EE4A34005D2EF6 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1ED212E420EE4A33005D2EF6 /* Raleway-Medium.ttf */; };
+		1ED212E820EE4A34005D2EF6 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1ED212E520EE4A33005D2EF6 /* Raleway-Regular.ttf */; };
 		2A9D6D42CDD42B136B822C52 /* Pods_feelae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB742CC70298548084F6BE3C /* Pods_feelae.framework */; };
 		531AF9FC20EA283200E680DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AF9FB20EA283200E680DF /* AppDelegate.swift */; };
 		531AFA0120EA283200E680DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531AF9FF20EA283200E680DF /* Main.storyboard */; };
@@ -42,7 +45,6 @@
 		0515B3EB20ED2C2500D1A3FA /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationControllerDelegate.swift; path = emplate/NavigationControllerDelegate.swift; sourceTree = "<group>"; };
 		0515B3ED20ED55DA00D1A3FA /* CheckingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckingController.swift; path = emplate/CheckingController.swift; sourceTree = "<group>"; };
 		055103CE20ECED32009F244E /* PainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PainController.swift; sourceTree = "<group>"; };
-		05722A7920EE09A900C0803D /* dataTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = dataTransformer.swift; path = feelae/Transformer/dataTransformer.swift; sourceTree = SOURCE_ROOT; };
 		05722A7B20EE09B800C0803D /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = feelae/emplate/data.json; sourceTree = SOURCE_ROOT; };
 		05722A7C20EE09B800C0803D /* question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = question.swift; path = feelae/emplate/question.swift; sourceTree = SOURCE_ROOT; };
 		05722A7F20EE0BB800C0803D /* BodyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,10 @@
 		1E54C56E20EC311B00D87FC2 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		1EB912F120ECB48400239F69 /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
 		1EB912F320ECCD4300239F69 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		1ED212DF20EE497D005D2EF6 /* dataTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = dataTransformer.swift; path = "feelae/New Group/dataTransformer.swift"; sourceTree = SOURCE_ROOT; };
+		1ED212E320EE4A32005D2EF6 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		1ED212E420EE4A33005D2EF6 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		1ED212E520EE4A33005D2EF6 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		531AF9F820EA283200E680DF /* feelae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = feelae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		531AF9FB20EA283200E680DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		531AFA0020EA283200E680DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,10 +101,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		05722A7820EE099600C0803D /* Transformer */ = {
+		1ED212E120EE498B005D2EF6 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				05722A7920EE09A900C0803D /* dataTransformer.swift */,
+				1ED212E320EE4A32005D2EF6 /* Raleway-Bold.ttf */,
+				1ED212E420EE4A33005D2EF6 /* Raleway-Medium.ttf */,
+				1ED212E520EE4A33005D2EF6 /* Raleway-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		1ED212E220EE4998005D2EF6 /* Transformer */ = {
+			isa = PBXGroup;
+			children = (
+				1ED212DF20EE497D005D2EF6 /* dataTransformer.swift */,
 			);
 			name = Transformer;
 			path = "New Group";
@@ -142,8 +158,9 @@
 		531AF9FA20EA283200E680DF /* feelae */ = {
 			isa = PBXGroup;
 			children = (
+				1ED212E220EE4998005D2EF6 /* Transformer */,
+				1ED212E120EE498B005D2EF6 /* fonts */,
 				05722A8020EE0BBD00C0803D /* BtnOptions.swift */,
-				05722A7820EE099600C0803D /* Transformer */,
 				05722A7720EE099100C0803D /* Model */,
 				531AFA0D20EA295300E680DF /* Controllers */,
 				531AF9FB20EA283200E680DF /* AppDelegate.swift */,
@@ -243,12 +260,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				531AFA0620EA283300E680DF /* LaunchScreen.storyboard in Resources */,
+				1ED212E720EE4A34005D2EF6 /* Raleway-Medium.ttf in Resources */,
 				531AFA0320EA283300E680DF /* Assets.xcassets in Resources */,
+				1ED212E820EE4A34005D2EF6 /* Raleway-Regular.ttf in Resources */,
 				1E54C56120EC007000D87FC2 /* checking.storyboard in Resources */,
 				05722A9220EE0E3100C0803D /* PainDoll.storyboard in Resources */,
 				05722A8F20EE0D1400C0803D /* Heart.storyboard in Resources */,
 				05722A9020EE0D1400C0803D /* rangeTemp.storyboard in Resources */,
 				05722A7D20EE09B800C0803D /* data.json in Resources */,
+				1ED212E620EE4A34005D2EF6 /* Raleway-Bold.ttf in Resources */,
 				531AFA0120EA283200E680DF /* Main.storyboard in Resources */,
 				1E54C56B20EC1C3800D87FC2 /* TableView.storyboard in Resources */,
 				1E54C56D20EC2B3C00D87FC2 /* Picker.storyboard in Resources */,
@@ -303,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05722A7E20EE09B800C0803D /* question.swift in Sources */,
+				1ED212E020EE497D005D2EF6 /* dataTransformer.swift in Sources */,
 				1E54C56F20EC311B00D87FC2 /* PickerViewController.swift in Sources */,
 				531AF9FC20EA283200E680DF /* AppDelegate.swift in Sources */,
 				05722A8620EE0BBE00C0803D /* BtnOptions.swift in Sources */,
@@ -314,7 +335,6 @@
 				05722A8C20EE0C5400C0803D /* ViewController.swift in Sources */,
 				531AFA0F20EA29A500E680DF /* SymptomeController.swift in Sources */,
 				1E54C56920EC16F000D87FC2 /*  CheckListController.swift in Sources */,
-				05722A7A20EE09A900C0803D /* dataTransformer.swift in Sources */,
 				0515B3EC20ED2C2600D1A3FA /* NavigationControllerDelegate.swift in Sources */,
 				0515B3EE20ED55DA00D1A3FA /* CheckingController.swift in Sources */,
 				1EB912F420ECCD4300239F69 /* ResultViewController.swift in Sources */,
