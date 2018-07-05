@@ -363,11 +363,11 @@
                         
                         "question": "",
                         
-                        "answer": [
+                        "answers": [
                                    
                                    {
                                    
-                                   "id": "jambeDroite",
+                                   "id": "jambeDroite-precision",
                                    
                                    "title": "Précisez la zone douloureuse",
                                    
@@ -377,7 +377,7 @@
                                    
                                    "question": "",
                                    
-                                   "answer": [
+                                   "answers": [
                                               
                                               {
                                               

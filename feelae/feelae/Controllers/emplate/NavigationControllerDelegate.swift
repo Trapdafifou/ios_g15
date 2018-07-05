@@ -31,6 +31,7 @@ class NavigationControllerDelegate {
             self.question = dataTransfer.getNormalWorkflow()
         }
         
+        
         if( self.question?.getPageType() == "doubleChoiceQuestion" ){
             let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             

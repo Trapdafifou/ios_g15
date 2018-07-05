@@ -26,7 +26,6 @@ class RangeTempController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func viewTapped(_ sender: UIButton) {
-        print(String(format:"%.2f", self.valueSlider))
         
         if(self.valueSlider > 38.00){
              self.response = "38.0"
