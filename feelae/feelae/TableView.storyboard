@@ -27,8 +27,8 @@
                                             <constraint firstAttribute="width" constant="29" id="VXg-Ut-cSD"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Précisez la zone douloureuse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIG-el-fkX">
-                                        <rect key="frame" x="75.5" y="43" width="224" height="19.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Précisez la zone douloureuse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIG-el-fkX">
+                                        <rect key="frame" x="25" y="43" width="274.5" height="19.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -111,6 +111,7 @@
                                     <constraint firstItem="LhZ-e2-HR4" firstAttribute="leading" secondItem="PSc-XE-f2W" secondAttribute="leading" id="Kag-Vv-UhJ"/>
                                     <constraint firstAttribute="trailing" secondItem="LhZ-e2-HR4" secondAttribute="trailing" id="Ltc-6y-z5x"/>
                                     <constraint firstAttribute="bottom" secondItem="g6d-Pm-03e" secondAttribute="bottom" constant="44" id="Mwb-3t-U7h"/>
+                                    <constraint firstAttribute="trailing" secondItem="YIG-el-fkX" secondAttribute="trailing" constant="25" id="MzF-hM-mBC"/>
                                     <constraint firstAttribute="trailing" secondItem="jkU-zB-iNx" secondAttribute="trailing" constant="25" id="OgT-X1-E1r"/>
                                     <constraint firstItem="LhZ-e2-HR4" firstAttribute="top" secondItem="kSE-A9-X9M" secondAttribute="bottom" constant="25" id="P4a-fa-fsA"/>
                                     <constraint firstItem="kSE-A9-X9M" firstAttribute="leading" secondItem="PSc-XE-f2W" secondAttribute="leading" constant="29" id="RMy-YQ-Jew"/>
@@ -118,6 +119,7 @@
                                     <constraint firstItem="xXW-Hy-ykc" firstAttribute="leading" secondItem="PSc-XE-f2W" secondAttribute="leading" constant="40" id="ZSf-iS-1Uv"/>
                                     <constraint firstItem="jkU-zB-iNx" firstAttribute="leading" secondItem="YIG-el-fkX" secondAttribute="trailing" constant="21.5" id="agc-wS-p1w"/>
                                     <constraint firstAttribute="bottom" secondItem="ukM-9I-dU9" secondAttribute="bottom" constant="44" id="dWe-DC-9ro"/>
+                                    <constraint firstItem="YIG-el-fkX" firstAttribute="leading" secondItem="PSc-XE-f2W" secondAttribute="leading" constant="25" id="dXH-sb-ERg"/>
                                     <constraint firstAttribute="trailing" secondItem="xss-Jh-xSI" secondAttribute="trailing" id="eIa-0z-mQY"/>
                                     <constraint firstAttribute="trailing" secondItem="xXW-Hy-ykc" secondAttribute="trailing" constant="40" id="ffX-dQ-LZ3"/>
                                     <constraint firstItem="g6d-Pm-03e" firstAttribute="leading" secondItem="PSc-XE-f2W" secondAttribute="leading" constant="25" id="i5v-7y-bz9"/>
