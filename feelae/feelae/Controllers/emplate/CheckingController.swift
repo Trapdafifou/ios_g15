@@ -47,7 +47,7 @@ class CheckingController: UIViewController, ChildToParentProtocol{
     }
     
     func buttonClicked(value: String?) {
-        var controllerToSend = navigation.ReturnPageType(question: question!, response: "jambeDroite")
+        var controllerToSend = navigation.ReturnPageType(question: question!, response: value!)
         self.changeView(controller: controllerToSend!)
     }
 }
