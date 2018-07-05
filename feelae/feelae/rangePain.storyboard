@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TFc-YT-tAl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Range Pain View Controller-->
+        <scene sceneID="pS8-sC-dae">
+            <objects>
+                <viewController storyboardIdentifier="rangePain" id="TFc-YT-tAl" customClass="rangePainViewController" customModule="feelae" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="luh-on-OZd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qr1-wL-pPK">
+                                <rect key="frame" x="23" y="328.5" width="329" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9di-2E-fAe">
+                                <rect key="frame" x="25" y="572" width="155" height="34"/>
+                                <color key="backgroundColor" red="0.25098039220000001" green="0.30196078430000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
+                                <state key="normal" title="Retour">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M46-a5-9oG">
+                                <rect key="frame" x="195" y="572" width="155" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.52941176469999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
+                                <state key="normal" title="Suivant">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instensité" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqa-sN-tiV">
+                                <rect key="frame" x="25" y="50" width="325" height="22"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suivant votre fréquence cardiaque nous allons pouvoir diagnostiqué ou valider différent symptome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Es7-dy-3ws">
+                                <rect key="frame" x="25" y="85" width="325" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="telephone" translatesAutoresizingMaskIntoConstraints="NO" id="Anu-mx-yJw">
+                                <rect key="frame" x="322" y="17" width="29" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="29" id="Njv-Oe-gD2"/>
+                                    <constraint firstAttribute="height" constant="29" id="jPI-jQ-a4K"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHC-TW-YfV">
+                                <rect key="frame" x="26" y="166" width="325" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Es7-dy-3ws" firstAttribute="top" secondItem="qqa-sN-tiV" secondAttribute="bottom" constant="13" id="3Pc-MX-HD0"/>
+                            <constraint firstItem="VHC-TW-YfV" firstAttribute="top" secondItem="Es7-dy-3ws" secondAttribute="bottom" constant="31.5" id="3Qs-ER-DfY"/>
+                            <constraint firstItem="VHC-TW-YfV" firstAttribute="leading" secondItem="pxt-pb-4Gm" secondAttribute="leading" constant="25" id="BIN-xz-n1E"/>
+                            <constraint firstItem="pxt-pb-4Gm" firstAttribute="trailing" secondItem="VHC-TW-YfV" secondAttribute="trailing" constant="25" id="GoA-Hl-MIF"/>
+                            <constraint firstItem="pxt-pb-4Gm" firstAttribute="trailing" secondItem="Qr1-wL-pPK" secondAttribute="trailing" constant="25" id="GpL-iq-mec"/>
+                            <constraint firstItem="M46-a5-9oG" firstAttribute="leading" secondItem="9di-2E-fAe" secondAttribute="trailing" constant="15" id="HkC-fY-6dB"/>
+                            <constraint firstItem="qqa-sN-tiV" firstAttribute="leading" secondItem="pxt-pb-4Gm" secondAttribute="leading" constant="25" id="LTk-Th-8lf"/>
+                            <constraint firstItem="Qr1-wL-pPK" firstAttribute="centerX" secondItem="pxt-pb-4Gm" secondAttribute="centerX" id="OPm-Dp-ouy"/>
+                            <constraint firstItem="Qr1-wL-pPK" firstAttribute="centerY" secondItem="pxt-pb-4Gm" secondAttribute="centerY" id="W8B-hB-KHV"/>
+                            <constraint firstItem="pxt-pb-4Gm" firstAttribute="bottom" secondItem="M46-a5-9oG" secondAttribute="bottom" constant="61" id="XGd-wf-qFU"/>
+                            <constraint firstItem="pxt-pb-4Gm" firstAttribute="trailing" secondItem="qqa-sN-tiV" secondAttribute="trailing" constant="25" id="aXf-sK-Amp"/>
+                            <constraint firstItem="qqa-sN-tiV" firstAttribute="top" secondItem="pxt-pb-4Gm" secondAttribute="top" constant="30" id="avq-uk-aLg"/>
+                            <constraint firstItem="pxt-pb-4Gm" firstAttribute="trailing" secondItem="Es7-dy-3ws" secondAttribute="trailing" constant="25" id="bCu-64-6eY"/>
+                            <constraint firstItem="Qr1-wL-pPK" firstAttribute="leading" secondItem="pxt-pb-4Gm" secondAttribute="leading" constant="25" id="d4S-cV-g8X"/>
+                            <constraint firstItem="pxt-pb-4Gm" firstAttribute="trailing" secondItem="M46-a5-9oG" secondAttribute="trailing" constant="25" id="dJL-6P-1O0"/>
+                            <constraint firstItem="pxt-pb-4Gm" firstAttribute="top" secondItem="Anu-mx-yJw" secondAttribute="top" constant="3" id="fD6-aZ-c5P"/>
+                            <constraint firstItem="9di-2E-fAe" firstAttribute="leading" secondItem="pxt-pb-4Gm" secondAttribute="leading" constant="25" id="ilS-aP-dL6"/>
+                            <constraint firstItem="M46-a5-9oG" firstAttribute="leading" secondItem="9di-2E-fAe" secondAttribute="trailing" constant="15" id="lXz-G5-Y3q"/>
+                            <constraint firstItem="Es7-dy-3ws" firstAttribute="leading" secondItem="pxt-pb-4Gm" secondAttribute="leading" constant="25" id="o4W-GE-QNd"/>
+                            <constraint firstItem="9di-2E-fAe" firstAttribute="width" secondItem="M46-a5-9oG" secondAttribute="width" id="tIY-ar-g3l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pxt-pb-4Gm"/>
+                    </view>
+                    <connections>
+                        <outlet property="ReturnButton" destination="9di-2E-fAe" id="qs8-cd-unZ"/>
+                        <outlet property="nextButton" destination="M46-a5-9oG" id="atj-UA-jZM"/>
+                        <outlet property="slider" destination="Qr1-wL-pPK" id="lPi-ke-87e"/>
+                        <outlet property="sliderLabel" destination="VHC-TW-YfV" id="8wB-wt-hm7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tg8-xX-rVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18" y="-869"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="telephone" width="29" height="29"/>
+    </resources>
+</document>
