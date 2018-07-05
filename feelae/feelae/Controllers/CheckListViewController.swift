@@ -18,10 +18,17 @@ class CheckListViewController: UIViewController, UITableViewDataSource, UITableV
     @IBOutlet weak var PreviousButton: UIButton!
     @IBOutlet weak var ButtonNext: UIButton!
     
+    @IBOutlet weak var checkListTitle: UILabel!
+    @IBOutlet weak var checkListSubtitle: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        self.checkListTitle.text = question?.getTitle()
+        self.checkListSubtitle.text = question?.getSubTitle()
     }
     
     let parts = ["loge antérieure","loge postérieure","loge interne","autres"]
@@ -35,13 +42,12 @@ class CheckListViewController: UIViewController, UITableViewDataSource, UITableV
         return cell
         
     }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCellAccessoryType.checkmark{
-            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.none
-        }else{
-            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
-        }
+        tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        tableView.cellForRow(at: indexPath)?.accessoryType = .none
     }
     
     @IBAction func NextChecked(_ sender: UIButton) {
