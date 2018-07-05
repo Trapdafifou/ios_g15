@@ -79,6 +79,14 @@ class NavigationControllerDelegate {
             controller.question = self.question
             
             return controller
+        }else if (self.question?.getPageType() == "rangeIntensite"){
+            let storyboard:UIStoryboard = UIStoryboard(name: "TableView", bundle: nil)
+            
+            let controller = storyboard.instantiateViewController(withIdentifier: "CheckListViewController") as! CheckListViewController
+            
+            controller.question = self.question
+            
+            return controller
         }else{
             print(self.question?.getPageType(), "pagetype")
         }

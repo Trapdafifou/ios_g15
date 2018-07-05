@@ -16,7 +16,9 @@ class SymptomeController: UIViewController {
     
     @IBAction func NoAction(_ sender: UIButton) {
         var controllerToSend = navigation.ReturnPageType(question: question!, response: "non")
-        self.changeView(controller: controllerToSend!)
+        if(controllerToSend != nil){
+            self.changeView(controller: controllerToSend!)
+        }
     }
     
     @IBAction func YEsAction(_ sender: UIButton) {
