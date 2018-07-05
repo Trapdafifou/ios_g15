@@ -29,9 +29,15 @@ class CheckListViewController: UIViewController, UITableViewDataSource, UITableV
         tableView.dataSource = self
         self.checkListTitle.text = question?.getTitle()
         self.checkListSubtitle.text = question?.getSubTitle()
+        for response in (self.question?.getResponse()!)! {
+            parts.append(response.getId())
+        }
     }
     
-    let parts = ["loge antérieure","loge postérieure","loge interne","autres"]
+    var parts = [String]()
+    
+   
+    
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return parts.count
