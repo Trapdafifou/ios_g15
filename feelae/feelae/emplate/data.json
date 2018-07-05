@@ -1,0 +1,1667 @@
+{
+    
+    "Seasonal": {
+        
+        "id": "seasonal",
+        
+        "title": "Épisode de grippe en France",
+        
+        "subtitle": "Répondez aux questions",
+        
+        "question": "Pensez-vous avoir la grippe ?",
+        
+        "pageType": "doubleChoiceQuestion",
+        
+        "answers": [
+                    
+                    {
+                    
+                    "id": "oui",
+                    
+                    "title": "Maux de tête ?",
+                    
+                    "subtitle": "Avez-vous mal à la zone présentée ci-dessous ?",
+                    
+                    "question": "",
+                    
+                    "pageType": "bodyMan-checkup",
+                    
+                    "answers": [
+                                
+                                {
+                                
+                                "id": "oui",
+                                
+                                "title": "Maux de gorge ?",
+                                
+                                "subtitle": "Avez-vous mal à la zone présentée ci-dessous ?",
+                                
+                                "question": "",
+                                
+                                "pageType": "bodyMan-checkup",
+                                
+                                "answers": [
+                                            
+                                            {
+                                            
+                                            "id": "oui",
+                                            
+                                            "title": "Aidez-nous à confirmer le problème",
+                                            
+                                            "subtitle": "Répondez aux questions",
+                                            
+                                            "question": "Est-ce que vos maux de tête se produisent à plusieurs reprises, avec des périodes de soulagement entre les deux ?",
+                                            
+                                            "pageType": "doubleChoiceQuestion",
+                                            
+                                            "answers": [
+                                                        
+                                                        {
+                                                        
+                                                        "id": "oui",
+                                                        
+                                                        "title": "Température corporelle",
+                                                        
+                                                        "subtitle": "Suivant votre température corporelle nous allons pouvoir confirmer ou invalider le diagnostic",
+                                                        
+                                                        "question": "",
+                                                        
+                                                        "pageType": "rangeTemp",
+                                                        
+                                                        "answers": [{
+                                                                    
+                                                                    "id": "37.0",
+                                                                    
+                                                                    "title": "Une consultation médicale est recommandée",
+                                                                    
+                                                                    "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                    
+                                                                    "pageType": "recap",
+                                                                    
+                                                                    "question": "",
+                                                                    
+                                                                    "conclusion": "conclusion-physique-doc"
+                                                                    
+                                                                    },
+                                                                    
+                                                                    {
+                                                                    
+                                                                    "id": "38.0",
+                                                                    
+                                                                    "title": "Contactez les urgences",
+                                                                    
+                                                                    "subtitle": "Votre état médical nécessite d'aller dès que possible aux urgences",
+                                                                    
+                                                                    "pageType": "recap",
+                                                                    
+                                                                    "question": "",
+                                                                    
+                                                                    "conclusion": "urgence"
+                                                                    
+                                                                    },
+                                                                    
+                                                                    {
+                                                                    
+                                                                    "id": "autre",
+                                                                    
+                                                                    "title": "Une consultation médicale est recommandée",
+                                                                    
+                                                                    "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                    
+                                                                    "pageType": "recap",
+                                                                    
+                                                                    "question": "",
+                                                                    
+                                                                    "conclusion": "conclusion-physique-doc"
+                                                                    
+                                                                    }
+                                                                    
+                                                                    ]
+                                                        },
+                                                        
+                                                        {
+                                                        
+                                                        "id": "non",
+                                                        
+                                                        "title": "Une consultation médicale est recommandée",
+                                                        
+                                                        "subtitle": "",
+                                                        
+                                                        "pageType": "rangeTemp",
+                                                        
+                                                        "question": "prends ta température",
+                                                        
+                                                        "answers": [
+                                                                    
+                                                                    {
+                                                                    
+                                                                    "id": "37.0",
+                                                                    
+                                                                    "title": "Une consultation médicale est recommandée",
+                                                                    
+                                                                    "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                    
+                                                                    "pageType": "recap",
+                                                                    
+                                                                    "question": "",
+                                                                    
+                                                                    "conclusion": "conclusion-physique-doc"
+                                                                    
+                                                                    },
+                                                                    
+                                                                    {
+                                                                    
+                                                                    "id": "38.0",
+                                                                    
+                                                                    "title": "Contactez les urgences",
+                                                                    
+                                                                    "subtitle": "Votre état médical nécessite d'aller dès que possible aux urgences",
+                                                                    
+                                                                    "pageType": "recap",
+                                                                    
+                                                                    "question": "",
+                                                                    
+                                                                    "conclusion": "urgence"
+                                                                    
+                                                                    },
+                                                                    
+                                                                    {
+                                                                    
+                                                                    "id": "autre",
+                                                                    
+                                                                    "title": "Vos symptômes",
+                                                                    
+                                                                    "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                    
+                                                                    "pageType": "addSymptoms",
+                                                                    
+                                                                    "question": "",
+                                                                    
+                                                                    "answers":[
+                                                                               
+                                                                               {
+                                                                               
+                                                                               "id": "headache",
+                                                                               
+                                                                               "title": "Vos symptômes",
+                                                                               
+                                                                               "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                               
+                                                                               "pageType": "addSymptoms",
+                                                                               
+                                                                               "question": "",
+                                                                               
+                                                                               "answers":[
+                                                                                          
+                                                                                          {
+                                                                                          
+                                                                                          "id": "suivant",
+                                                                                          
+                                                                                          "title": "Une consultation médicale est recommandée",
+                                                                                          
+                                                                                          "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                          
+                                                                                          "pageType": "recap",
+                                                                                          
+                                                                                          "conclusion": "conclusion-physique-doc"
+                                                                                          
+                                                                                          }
+                                                                                          
+                                                                                          ]
+                                                                               
+                                                                               },
+                                                                               
+                                                                               {
+                                                                               
+                                                                               "id": "injury",
+                                                                               
+                                                                               "title": "Vos symptômes",
+                                                                               
+                                                                               "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                               
+                                                                               "pageType": "addSymptoms",
+                                                                               
+                                                                               "question": "",
+                                                                               
+                                                                               "answers":[
+                                                                                          
+                                                                                          {
+                                                                                          
+                                                                                          "id": "suivant",
+                                                                                          
+                                                                                          "title": "Une consultation médicale est recommandée",
+                                                                                          
+                                                                                          "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                          
+                                                                                          "pageType": "recap",
+                                                                                          
+                                                                                          "conclusion": "conclusion-physique-doc"
+                                                                                          
+                                                                                          }
+                                                                                          
+                                                                                          ]
+                                                                               
+                                                                               },
+                                                                               
+                                                                               {
+                                                                               
+                                                                               "id": "high temperature",
+                                                                               
+                                                                               "title": "Vos symptômes",
+                                                                               
+                                                                               "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                               
+                                                                               "pageType": "addSymptoms",
+                                                                               
+                                                                               "question": "",
+                                                                               
+                                                                               "answers":[
+                                                                                          
+                                                                                          {
+                                                                                          
+                                                                                          "id": "suivant",
+                                                                                          
+                                                                                          "title": "Une consultation médicale est recommandée",
+                                                                                          
+                                                                                          "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                          
+                                                                                          "question": "",
+                                                                                          
+                                                                                          "pageType": "recap",
+                                                                                          
+                                                                                          "conclusion": "conclusion-physique-doc"
+                                                                                          
+                                                                                          }
+                                                                                          
+                                                                                          ]
+                                                                               
+                                                                               }
+                                                                               
+                                                                               ]
+                                                                    
+                                                                    }
+                                                                    
+                                                                    ]
+                                                        
+                                                        }
+                                                        
+                                                        ]
+                                            
+                                            },
+                                            
+                                            {
+                                            
+                                            "id": "non",
+                                            
+                                            "title": "",
+                                            
+                                            "subtitle": "",
+                                            
+                                            "question": "",
+                                            
+                                            "pageType": "bodyMan",
+                                            
+                                            "conclusion": "Parcours-normal"
+                                            
+                                            }
+                                            
+                                            ]
+                                
+                                },
+                                
+                                {
+                                
+                                "id": "non",
+                                
+                                "title": "Où avez-vous mal ?",
+                                
+                                "subtitle": "Sélectionnez la zone douloureuse",
+                                
+                                "question": "",
+                                
+                                "pageType": "bodyMan",
+                                
+                                "conclusion": "Parcours-normal"
+                                
+                                }
+                                
+                                ]
+                    
+                    },
+                    {
+                    
+                    "id": "non",
+                    
+                    "title": "Où avez-vous mal ?",
+                    
+                    "subtitle": "Sélectionnez la zone douloureuse",
+                    
+                    "question": "",
+                    
+                    "conclusion": "Parcours-normal",
+                    
+                    "pageType": "bodyMan",
+                    
+                    "answers": []
+                    
+                    }
+                    
+                    ]
+        
+    },
+    
+    "Parcours-normal":
+                        {
+                        
+                        "id": "jambeDroite",
+                        
+                        "title": "Où avez-vous mal ? ",
+                        
+                        "subtitle": "Sélectionnez la zone douloureuse",
+                        
+                        "pageType": "bodyMan",
+                        
+                        "question": "",
+                        
+                        "answers": [
+                                   
+                                   {
+                                   
+                                   "id": "jambeDroite-precision",
+                                   
+                                   "title": "Précisez la zone douloureuse",
+                                   
+                                   "subtitle": "Séléctionnez dans la liste l'endroit où la douleur est la plus forte.",
+                                   
+                                   "pageType": "precisionList",
+                                   
+                                   "question": "",
+                                   
+                                   "answers": [
+                                              
+                                              {
+                                              
+                                              "id": "loge antérieure",
+                                              
+                                              "answers": []
+                                              
+                                              },
+                                              
+                                              {
+                                              
+                                              "id": "loge posterieure",
+                                              
+                                              "title": "Aidez nous à cibler votre douleur",
+                                              
+                                              "subtitle": "La douleur est-elle continue ?",
+                                              
+                                              "pageType": "doubleChoiceQuestion",
+                                              
+                                              "question": "",
+                                              
+                                              "answers": [
+                                                          
+                                                          {
+                                                          
+                                                          "id": "oui",
+                                                          
+                                                          "title": "Evaluez l'intensité",
+                                                          
+                                                          "subtitle": "Sur l'échelle de douleur, cliquez sur l'intensité correspondante",
+                                                          
+                                                          "pageType": "rangeIntensite",
+                                                          
+                                                          "question": "",
+                                                          
+                                                          "answers": [
+                                                                      
+                                                                      {
+                                                                      
+                                                                      "id": 1,
+                                                                      
+                                                                      "title": "Température corporelle",
+                                                                      
+                                                                      "subtitle": "Suivant votre température corporelle nous allons pouvoir confirmer ou invalider le diagnostic",
+                                                                      
+                                                                      "pageType": "rangeTemp",
+                                                                      
+                                                                      "question": "",
+                                                                      
+                                                                      "answers": [
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "37.0",
+                                                                                  
+                                                                                  "title": "Une consultation médicale est recommandée",
+                                                                                  
+                                                                                  "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                  
+                                                                                  "pageType": "recap",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "conclusion": "conclusion-physique-doc"
+                                                                                  
+                                                                                  },
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "38.0",
+                                                                                  
+                                                                                  "title": "Contactez les urgences",
+                                                                                  
+                                                                                  "subtitle": "Votre état médical nécessite d'aller dès que possible aux urgences",
+                                                                                  
+                                                                                  "pageType": "recap",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "conclusion": "urgence"
+                                                                                  
+                                                                                  },
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "autre",
+                                                                                  
+                                                                                  "title": "Vos symptômes",
+                                                                                  
+                                                                                  "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                  
+                                                                                  "pageType": "addSymptoms",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "answers":[
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "headache",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             },
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "injury",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             },
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "high temperature",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             }
+                                                                                             
+                                                                                             ]
+                                                                                  
+                                                                                  }
+                                                                                  
+                                                                                  ]
+                                                                      
+                                                                      },
+                                                                      
+                                                                      {
+                                                                      
+                                                                      "id": 2,
+                                                                      
+                                                                      "title": "Température corporelle",
+                                                                      
+                                                                      "subtitle": "Suivant votre température corporelle nous allons pouvoir confirmer ou invalider le diagnostic",
+                                                                      
+                                                                      "pageType": "rangeTemp",
+                                                                      
+                                                                      "question": "",
+                                                                      
+                                                                      "answers": [
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "37.0",
+                                                                                  
+                                                                                  "title": "Une consultation médicale est recommandée",
+                                                                                  
+                                                                                  "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                  
+                                                                                  "pageType": "recap",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "conclusion": "conclusion-physique-doc"
+                                                                                  
+                                                                                  },
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "38.0",
+                                                                                  
+                                                                                  "title": "Contactez les urgences",
+                                                                                  
+                                                                                  "subtitle": "Votre état médical nécessite d'aller dès que possible aux urgences",
+                                                                                  
+                                                                                  "pageType": "recap",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "conclusion": "urgence"
+                                                                                  
+                                                                                  },
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "autre",
+                                                                                  
+                                                                                  "title": "Vos symptômes",
+                                                                                  
+                                                                                  "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                  
+                                                                                  "pageType": "addSymptoms",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "answers":[
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "headache",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             },
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "injury",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             },
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "high temperature",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             }
+                                                                                             
+                                                                                             ]
+                                                                                  
+                                                                                  }
+                                                                                  
+                                                                                  ]
+                                                                      
+                                                                      },
+                                                                      
+                                                                      {
+                                                                      
+                                                                      "id": 3,
+                                                                      
+                                                                      "title": "Température corporelle",
+                                                                      
+                                                                      "subtitle": "Suivant votre température corporelle nous allons pouvoir confirmer ou invalider le diagnostic",
+                                                                      
+                                                                      "pageType": "rangeTemp",
+                                                                      
+                                                                      "question": "",
+                                                                      
+                                                                      "answers": [
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "37.0",
+                                                                                  
+                                                                                  "title": "Une consultation médicale est recommandée",
+                                                                                  
+                                                                                  "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                  
+                                                                                  "pageType": "recap",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "conclusion": "conclusion-physique-doc"
+                                                                                  
+                                                                                  },
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "38.0",
+                                                                                  
+                                                                                  "title": "Contactez les urgences",
+                                                                                  
+                                                                                  "subtitle": "Votre état médical nécessite d'aller dès que possible aux urgences",
+                                                                                  
+                                                                                  "pageType": "recap",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "conclusion": "urgence"
+                                                                                  
+                                                                                  },
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "autre",
+                                                                                  
+                                                                                  "title": "Vos symptômes",
+                                                                                  
+                                                                                  "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                  
+                                                                                  "pageType": "addSymptoms",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "answers":[
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "headache",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             },
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "injury",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             },
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "high temperature",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             }
+                                                                                             
+                                                                                             ]
+                                                                                  
+                                                                                  }
+                                                                                  
+                                                                                  ]
+                                                                      
+                                                                      },
+                                                                      
+                                                                      {
+                                                                      
+                                                                      "id": 4,
+                                                                      
+                                                                      "title": "Température corporelle",
+                                                                      
+                                                                      "subtitle": "Suivant votre température corporelle nous allons pouvoir confirmer ou invalider le diagnostic",
+                                                                      
+                                                                      "pageType": "rangeTemp",
+                                                                      
+                                                                      "question": "",
+                                                                      "answers": [
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "37.0",
+                                                                                  
+                                                                                  "title": "Une consultation médicale est recommandée",
+                                                                                  
+                                                                                  "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                  
+                                                                                  "pageType": "recap",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "conclusion": "conclusion-physique-doc"
+                                                                                  
+                                                                                  },
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "38.0",
+                                                                                  
+                                                                                  "title": "Contactez les urgences",
+                                                                                  
+                                                                                  "subtitle": "Votre état médical nécessite d'aller dès que possible aux urgences",
+                                                                                  
+                                                                                  "pageType": "recap",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "conclusion": "urgence"
+                                                                                  
+                                                                                  },
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "autre",
+                                                                                  
+                                                                                  "title": "Vos symptômes",
+                                                                                  
+                                                                                  "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                  
+                                                                                  "pageType": "addSymptoms",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "answers":[
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "headache",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             },
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "injury",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             },
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "high temperature",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             }
+                                                                                             
+                                                                                             ]
+                                                                                  
+                                                                                  }
+                                                                                  
+                                                                                  ]
+                                                                      
+                                                                      },
+                                                                      
+                                                                      {
+                                                                      
+                                                                      "id": 5,
+                                                                      
+                                                                      "title": "Température corporelle",
+                                                                      
+                                                                      "subtitle": "Suivant votre température corporelle nous allons pouvoir confirmer ou invalider le diagnostic",
+                                                                      
+                                                                      "pageType": "rangeTemp",
+                                                                      
+                                                                      "question": "",
+                                                                      
+                                                                      "answers": [
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "37.0",
+                                                                                  
+                                                                                  "title": "Une consultation médicale est recommandée",
+                                                                                  
+                                                                                  "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                  
+                                                                                  "pageType": "recap",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "conclusion": "conclusion-physique-doc"
+                                                                                  
+                                                                                  },
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "38.0",
+                                                                                  
+                                                                                  "title": "Contactez les urgences",
+                                                                                  
+                                                                                  "subtitle": "Votre état médical nécessite d'aller dès que possible aux urgences",
+                                                                                  
+                                                                                  "pageType": "recap",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "conclusion": "urgence"
+                                                                                  
+                                                                                  },
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "autre",
+                                                                                  
+                                                                                  "title": "Vos symptômes",
+                                                                                  
+                                                                                  "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                  
+                                                                                  "pageType": "addSymptoms",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "answers":[
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "headache",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             },
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "injury",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             },
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "high temperature",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             }
+                                                                                             
+                                                                                             ]
+                                                                                  
+                                                                                  }
+                                                                                  
+                                                                                  ]
+                                                                      
+                                                                      },
+                                                                      
+                                                                      {
+                                                                      
+                                                                      "id": 6,
+                                                                      
+                                                                      "title": "Température corporelle",
+                                                                      
+                                                                      "subtitle": "Suivant votre température corporelle nous allons pouvoir confirmer ou invalider le diagnostic",
+                                                                      
+                                                                      "pageType": "rangeTemp",
+                                                                      
+                                                                      "question": "",
+                                                                      
+                                                                      "answers": [
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "37.0",
+                                                                                  
+                                                                                  "title": "Une consultation médicale est recommandée",
+                                                                                  
+                                                                                  "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                  
+                                                                                  "pageType": "recap",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "conclusion": "conclusion-physique-doc"
+                                                                                  
+                                                                                  },
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "38.0",
+                                                                                  
+                                                                                  "title": "Contactez les urgences",
+                                                                                  
+                                                                                  "subtitle": "Votre état médical nécessite d'aller dès que possible aux urgences",
+                                                                                  
+                                                                                  "pageType": "recap",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "conclusion": "urgence"
+                                                                                  
+                                                                                  },
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "autre",
+                                                                                  
+                                                                                  "title": "Vos symptômes",
+                                                                                  
+                                                                                  "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                  
+                                                                                  "pageType": "addSymptoms",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "answers":[
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "headache",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             },
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "injury",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             },
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "high temperature",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             }
+                                                                                             
+                                                                                             ]
+                                                                                  
+                                                                                  }
+                                                                                  
+                                                                                  ]
+                                                                      
+                                                                      },
+                                                                      
+                                                                      {
+                                                                      
+                                                                      "id": 7,
+                                                                      
+                                                                      "title": "Température corporelle",
+                                                                      
+                                                                      "subtitle": "Suivant votre température corporelle nous allons pouvoir confirmer ou invalider le diagnostic",
+                                                                      
+                                                                      "pageType": "rangeTemp",
+                                                                      
+                                                                      "question": "",
+                                                                      
+                                                                      "answers": [
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "37.0",
+                                                                                  
+                                                                                  "title": "Une consultation médicale est recommandée",
+                                                                                  
+                                                                                  "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                  
+                                                                                  "pageType": "recap",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "conclusion": "conclusion-physique-doc"
+                                                                                  
+                                                                                  },
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "38.0",
+                                                                                  
+                                                                                  "title": "Contactez les urgences",
+                                                                                  
+                                                                                  "subtitle": "Votre état médical nécessite d'aller dès que possible aux urgences",
+                                                                                  
+                                                                                  "pageType": "recap",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "conclusion": "urgence"
+                                                                                  
+                                                                                  },
+                                                                                  
+                                                                                  {
+                                                                                  
+                                                                                  "id": "autre",
+                                                                                  
+                                                                                  "title": "Vos symptômes",
+                                                                                  
+                                                                                  "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                  
+                                                                                  "pageType": "addSymptoms",
+                                                                                  
+                                                                                  "question": "",
+                                                                                  
+                                                                                  "answers":[
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "headache",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             },
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "injury",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             },
+                                                                                             
+                                                                                             {
+                                                                                             
+                                                                                             "id": "high temperature",
+                                                                                             
+                                                                                             "title": "Vos symptômes",
+                                                                                             
+                                                                                             "subtitle": "Donnez-nous plus d’informations sur vos douleurs pour une analyse plus poussée.",
+                                                                                             
+                                                                                             "pageType": "addSymptoms",
+                                                                                             
+                                                                                             "question": "",
+                                                                                             
+                                                                                             "answers":[
+                                                                                                        
+                                                                                                        {
+                                                                                                        
+                                                                                                        "id": "suivant",
+                                                                                                        
+                                                                                                        "title": "Une consultation médicale est recommandée",
+                                                                                                        
+                                                                                                        "subtitle": "Compte tenu des symptômes et douleurs évoqués, nous vous conseillons  une consultation auprès de votre médecin",
+                                                                                                        
+                                                                                                        "question": "",
+                                                                                                        
+                                                                                                        "pageType": "recap",
+                                                                                                        
+                                                                                                        "conclusion": "conclusion-physique-doc"
+                                                                                                        
+                                                                                                        }
+                                                                                                        
+                                                                                                        ]
+                                                                                             
+                                                                                             }
+                                                                                             
+                                                                                             ]
+                                                                                  
+                                                                                  }
+                                                                                  
+                                                                                  ]
+                                                                      
+                                                                      },
+                                                                      
+                                                                      {
+                                                                      
+                                                                      "id": 8,
+                                                                      
+                                                                      "title": "Contactez les urgences",
+                                                                      
+                                                                      "subtitle": "Votre état médical nécessite d'aller dès que possible aux urgences",
+                                                                      
+                                                                      "question": "",
+                                                                      
+                                                                      "pageType": "recap",
+                                                                      
+                                                                      "conclusion": "urgence"
+                                                                      
+                                                                      },
+                                                                      
+                                                                      {
+                                                                      
+                                                                      "id": 9,
+                                                                      
+                                                                      "title": "Contactez les urgences",
+                                                                      
+                                                                      "subtitle": "Votre état médical nécessite d'aller dès que possible aux urgences",
+                                                                      
+                                                                      "question": "",
+                                                                      
+                                                                      "pageType": "recap",
+                                                                      
+                                                                      "conclusion": "urgence"
+                                                                      
+                                                                      },
+                                                                      
+                                                                      {
+                                                                      
+                                                                      "id": 10,
+                                                                      
+                                                                      "title": "Contactez les urgences",
+                                                                      
+                                                                      "subtitle": "Votre état médical nécessite d'aller dès que possible aux urgences",
+                                                                      
+                                                                      "question": "",
+                                                                      
+                                                                      "pageType": "recap",
+                                                                      
+                                                                      "conclusion": "urgence"
+                                                                      
+                                                                      }
+                                                                      
+                                                                      ]
+                                                          
+                                                          } ,
+                                                          
+                                                          {
+                                                          
+                                                          "id": "non",
+                                                          "pageType": "",
+                                                          "question": "",
+                                                          "answers": []
+                                                          
+                                                          }
+                                                          
+                                                          ]
+                                              
+                                              },
+                                              
+                                              {
+                                              
+                                              "id": "loge interne",
+                                              
+                                              "answers": []
+                                              
+                                              },
+                                              
+                                              {
+                                              
+                                              "id": "autre",
+                                              
+                                              "answers": []
+                                              
+                                              }
+                                              
+                                              ]
+                                   
+                                   }
+                                   
+                                   ]
+                        
+                        }
+}

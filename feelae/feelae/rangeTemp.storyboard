@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Range Temp Controller-->
+        <scene sceneID="7bP-dV-o0D">
+            <objects>
+                <viewController storyboardIdentifier="RangeTempController" id="Bk0-hE-OdJ" customClass="RangeTempController" customModule="feelae" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w5m-gx-oVZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Température corporelle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prh-d1-ZZI">
+                                <rect key="frame" x="25" y="63" width="325" height="21"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suivant votre fréquence cardiaque nous allons pouvoir diagnostiqué ou valider différent symptome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5X-U2-18o">
+                                <rect key="frame" x="25" y="97" width="325" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9n0-b9-jvb">
+                                <rect key="frame" x="120.5" y="185.5" width="134.5" height="77"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="66"/>
+                                <color key="textColor" red="0.0" green="0.95294117647058818" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="35" minValue="0.0" maxValue="42" translatesAutoresizingMaskIntoConstraints="NO" id="TCY-kW-8x5">
+                                <rect key="frame" x="23" y="387" width="329" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.0" green="0.95294117647058818" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.0" green="0.95294117647058818" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="slider:" destination="Bk0-hE-OdJ" eventType="valueChanged" id="fya-zn-UIP"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JId-Jp-yuw">
+                                <rect key="frame" x="25" y="589" width="155" height="34"/>
+                                <color key="backgroundColor" red="0.25098039220000001" green="0.30196078430000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
+                                <state key="normal" title="Retour">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ReturnButtonChecked:" destination="Bk0-hE-OdJ" eventType="touchUpInside" id="KYf-MK-01z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuc-ic-Qz7">
+                                <rect key="frame" x="195" y="589" width="155" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.52941176470588236" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
+                                <state key="normal" title="Suivant">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="viewTapped:" destination="Bk0-hE-OdJ" eventType="touchUpInside" id="v8h-vV-U3T"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vET-IN-Dbh">
+                                <rect key="frame" x="56" y="575" width="263" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="2" id="0D0-pg-Gqa"/>
+                                    <constraint firstAttribute="height" constant="2" id="meY-88-QxJ"/>
+                                </constraints>
+                            </progressView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telephone" translatesAutoresizingMaskIntoConstraints="NO" id="RdA-E4-mO5">
+                                <rect key="frame" x="321" y="30" width="29" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="Fez-gm-ceu"/>
+                                    <constraint firstAttribute="width" constant="29" id="yqs-yE-13v"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GF8-6W-HsW">
+                                <rect key="frame" x="25" y="332.5" width="325" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Vwm-hJ-90e"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yIg-Ci-vcZ" firstAttribute="trailing" secondItem="GF8-6W-HsW" secondAttribute="trailing" constant="25" id="0fb-FI-t3q"/>
+                            <constraint firstAttribute="bottom" secondItem="vET-IN-Dbh" secondAttribute="bottom" constant="90" id="0ns-tN-J9s"/>
+                            <constraint firstItem="wuc-ic-Qz7" firstAttribute="leading" secondItem="JId-Jp-yuw" secondAttribute="trailing" constant="15" id="1eK-UE-FPA"/>
+                            <constraint firstItem="JId-Jp-yuw" firstAttribute="leading" secondItem="w5m-gx-oVZ" secondAttribute="leading" constant="25" id="5e3-Y3-44r"/>
+                            <constraint firstItem="yIg-Ci-vcZ" firstAttribute="trailing" secondItem="F5X-U2-18o" secondAttribute="trailing" constant="25" id="6Ks-Cv-RGG"/>
+                            <constraint firstItem="F5X-U2-18o" firstAttribute="leading" secondItem="yIg-Ci-vcZ" secondAttribute="leading" constant="25" id="7LB-SH-ZNd"/>
+                            <constraint firstAttribute="bottom" secondItem="wuc-ic-Qz7" secondAttribute="bottom" constant="44" id="7bu-Fd-gZk"/>
+                            <constraint firstItem="9n0-b9-jvb" firstAttribute="top" secondItem="F5X-U2-18o" secondAttribute="bottom" constant="39" id="BDC-Pd-dOU"/>
+                            <constraint firstAttribute="bottom" secondItem="JId-Jp-yuw" secondAttribute="bottom" constant="44" id="BMz-0Y-7Up"/>
+                            <constraint firstItem="yIg-Ci-vcZ" firstAttribute="trailing" secondItem="TCY-kW-8x5" secondAttribute="trailing" constant="25" id="GUi-80-ANp"/>
+                            <constraint firstAttribute="trailing" secondItem="wuc-ic-Qz7" secondAttribute="trailing" constant="25" id="LEm-Aa-b3k"/>
+                            <constraint firstItem="RdA-E4-mO5" firstAttribute="top" secondItem="yIg-Ci-vcZ" secondAttribute="top" constant="10" id="Llf-io-Xkc"/>
+                            <constraint firstItem="TCY-kW-8x5" firstAttribute="leading" secondItem="yIg-Ci-vcZ" secondAttribute="leading" constant="25" id="QNF-Ka-y8u"/>
+                            <constraint firstItem="yIg-Ci-vcZ" firstAttribute="bottom" secondItem="TCY-kW-8x5" secondAttribute="bottom" constant="250" id="S9q-b8-V5E"/>
+                            <constraint firstItem="yIg-Ci-vcZ" firstAttribute="trailing" secondItem="Prh-d1-ZZI" secondAttribute="trailing" constant="25" id="Us5-1M-Ymx"/>
+                            <constraint firstItem="yIg-Ci-vcZ" firstAttribute="trailing" secondItem="RdA-E4-mO5" secondAttribute="trailing" constant="25" id="Yur-sN-MaJ"/>
+                            <constraint firstItem="Prh-d1-ZZI" firstAttribute="top" secondItem="yIg-Ci-vcZ" secondAttribute="top" constant="43" id="Zyp-h8-6fK"/>
+                            <constraint firstItem="wuc-ic-Qz7" firstAttribute="width" secondItem="JId-Jp-yuw" secondAttribute="width" id="acs-WE-fyH"/>
+                            <constraint firstItem="Prh-d1-ZZI" firstAttribute="leading" secondItem="yIg-Ci-vcZ" secondAttribute="leading" constant="25" id="bxh-f5-geY"/>
+                            <constraint firstItem="TCY-kW-8x5" firstAttribute="centerX" secondItem="w5m-gx-oVZ" secondAttribute="centerX" id="d5k-Bc-ELj"/>
+                            <constraint firstItem="GF8-6W-HsW" firstAttribute="leading" secondItem="yIg-Ci-vcZ" secondAttribute="leading" constant="25" id="fag-Ow-Uk5"/>
+                            <constraint firstItem="9n0-b9-jvb" firstAttribute="centerX" secondItem="w5m-gx-oVZ" secondAttribute="centerX" id="mSa-ha-CGP"/>
+                            <constraint firstItem="vET-IN-Dbh" firstAttribute="leading" secondItem="w5m-gx-oVZ" secondAttribute="leadingMargin" constant="40" id="skn-4o-UgS"/>
+                            <constraint firstItem="F5X-U2-18o" firstAttribute="top" secondItem="Prh-d1-ZZI" secondAttribute="bottom" constant="13" id="x7n-qS-n45"/>
+                            <constraint firstItem="GF8-6W-HsW" firstAttribute="top" secondItem="9n0-b9-jvb" secondAttribute="bottom" constant="70" id="xAb-3z-j6a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vET-IN-Dbh" secondAttribute="trailing" constant="40" id="yGb-3u-HaK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yIg-Ci-vcZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="rangeSubtitle" destination="F5X-U2-18o" id="cwB-Aa-iXE"/>
+                        <outlet property="rangeTitle" destination="Prh-d1-ZZI" id="xqj-PG-xTL"/>
+                        <outlet property="slider" destination="TCY-kW-8x5" id="dlt-0S-jDN"/>
+                        <outlet property="sliderLabel" destination="9n0-b9-jvb" id="H86-JV-Jor"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="azB-iv-ecI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-506.39999999999998" y="-6.746626686656672"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="telephone" width="29" height="29"/>
+    </resources>
+</document>
