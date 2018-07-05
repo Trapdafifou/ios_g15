@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Range Temp Controller-->
+        <scene sceneID="7bP-dV-o0D">
+            <objects>
+                <viewController storyboardIdentifier="RangeTempController" id="Bk0-hE-OdJ" customClass="RangeTempController" customModule="feelae" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w5m-gx-oVZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Température corporelle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prh-d1-ZZI">
+                                <rect key="frame" x="25" y="63" width="325" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suivant votre fréquence cardiaque nous allons pouvoir diagnostiqué ou valider différent symptome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5X-U2-18o">
+                                <rect key="frame" x="25" y="97" width="325" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9n0-b9-jvb">
+                                <rect key="frame" x="175.5" y="197" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="40" translatesAutoresizingMaskIntoConstraints="NO" id="TCY-kW-8x5">
+                                <rect key="frame" x="23" y="318.5" width="329" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.043137254899999998" green="0.49803921569999998" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="thumbTintColor" red="0.95686274510000002" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="slider:" destination="Bk0-hE-OdJ" eventType="valueChanged" id="fya-zn-UIP"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JId-Jp-yuw">
+                                <rect key="frame" x="25" y="603" width="155" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.25098039220000001" green="0.30196078430000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Retour">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ReturnButtonChecked:" destination="Bk0-hE-OdJ" eventType="touchUpInside" id="KYf-MK-01z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuc-ic-Qz7">
+                                <rect key="frame" x="204" y="603" width="155" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.25098039220000001" green="0.30196078430000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Suivant">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewTapped:" destination="Bk0-hE-OdJ" eventType="touchUpInside" id="v8h-vV-U3T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TCY-kW-8x5" firstAttribute="centerY" secondItem="w5m-gx-oVZ" secondAttribute="centerY" id="1rO-ii-v3b"/>
+                            <constraint firstItem="yIg-Ci-vcZ" firstAttribute="trailing" secondItem="F5X-U2-18o" secondAttribute="trailing" constant="25" id="6Ks-Cv-RGG"/>
+                            <constraint firstItem="F5X-U2-18o" firstAttribute="leading" secondItem="yIg-Ci-vcZ" secondAttribute="leading" constant="25" id="7LB-SH-ZNd"/>
+                            <constraint firstItem="9n0-b9-jvb" firstAttribute="top" secondItem="F5X-U2-18o" secondAttribute="bottom" constant="39" id="BDC-Pd-dOU"/>
+                            <constraint firstItem="yIg-Ci-vcZ" firstAttribute="trailing" secondItem="TCY-kW-8x5" secondAttribute="trailing" constant="25" id="GUi-80-ANp"/>
+                            <constraint firstItem="TCY-kW-8x5" firstAttribute="leading" secondItem="yIg-Ci-vcZ" secondAttribute="leading" constant="25" id="QNF-Ka-y8u"/>
+                            <constraint firstItem="yIg-Ci-vcZ" firstAttribute="trailing" secondItem="Prh-d1-ZZI" secondAttribute="trailing" constant="25" id="Us5-1M-Ymx"/>
+                            <constraint firstItem="Prh-d1-ZZI" firstAttribute="top" secondItem="yIg-Ci-vcZ" secondAttribute="top" constant="43" id="Zyp-h8-6fK"/>
+                            <constraint firstItem="Prh-d1-ZZI" firstAttribute="leading" secondItem="yIg-Ci-vcZ" secondAttribute="leading" constant="25" id="bxh-f5-geY"/>
+                            <constraint firstItem="TCY-kW-8x5" firstAttribute="centerX" secondItem="w5m-gx-oVZ" secondAttribute="centerX" id="d5k-Bc-ELj"/>
+                            <constraint firstItem="9n0-b9-jvb" firstAttribute="centerX" secondItem="w5m-gx-oVZ" secondAttribute="centerX" id="mSa-ha-CGP"/>
+                            <constraint firstItem="F5X-U2-18o" firstAttribute="top" secondItem="Prh-d1-ZZI" secondAttribute="bottom" constant="13" id="x7n-qS-n45"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yIg-Ci-vcZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="slider" destination="TCY-kW-8x5" id="dlt-0S-jDN"/>
+                        <outlet property="sliderLabel" destination="9n0-b9-jvb" id="H86-JV-Jor"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="azB-iv-ecI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-506.39999999999998" y="-6.746626686656672"/>
+        </scene>
+    </scenes>
+</document>

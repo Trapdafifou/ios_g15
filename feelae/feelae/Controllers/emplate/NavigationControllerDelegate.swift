@@ -26,7 +26,7 @@ class NavigationControllerDelegate {
                 }
             }
         }
-        
+
         if( self.question?.getPageType() == "doubleChoiceQuestion" ){
             let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             
@@ -54,6 +54,15 @@ class NavigationControllerDelegate {
             let storyboard:UIStoryboard = UIStoryboard(name: "rangeTemp", bundle: nil)
             
             let controller = storyboard.instantiateViewController(withIdentifier: "RangeTempController") as! RangeTempController
+            
+            controller.question = self.question
+            
+            return controller
+        }else if (self.question?.getPageType() == "recap"){
+            let storyboard:UIStoryboard = UIStoryboard(name: "Result", bundle: nil)
+            
+            let controller = storyboard.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
+            
             controller.question = self.question
             
             return controller

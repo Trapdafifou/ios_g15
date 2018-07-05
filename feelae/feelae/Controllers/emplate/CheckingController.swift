@@ -9,13 +9,15 @@
 import UIKit
 
 class CheckingController: UIViewController {
-    @IBOutlet weak var ReturnButton: UIButton!
     
+    @IBOutlet weak var ReturnButton: UIButton!
     @IBOutlet weak var ButtonSuivant: UIButton!
+    
     let navigation: NavigationControllerDelegate = NavigationControllerDelegate()
     @IBAction func ReturnButtonChecked(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
+    
     var response: String = ""
     var question : Question? = nil
     
