@@ -35,7 +35,7 @@ class PainBodyController: UIViewController, PainBodyToPainScaleProtocol {
     
     func scaleClicked(value: Int) {
         print(value)
-        var controllerToSend = navigation.ReturnPageType(question: question!, response: "")
+        var controllerToSend = navigation.ReturnPageType(question: question!, response: String(value))
         self.changeView(controller: controllerToSend!)
     }
 
