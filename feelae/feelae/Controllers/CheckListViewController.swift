@@ -17,6 +17,7 @@ class CheckListViewController: UIViewController, UITableViewDataSource, UITableV
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var PreviousButton: UIButton!
     @IBOutlet weak var ButtonNext: UIButton!
+    let parts = ["loge antérieure","loge postérieure","loge interne","autres"]
     
     @IBOutlet weak var checkListTitle: UILabel!
     @IBOutlet weak var checkListSubtitle: UILabel!
@@ -24,6 +25,7 @@ class CheckListViewController: UIViewController, UITableViewDataSource, UITableV
     
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
@@ -31,7 +33,6 @@ class CheckListViewController: UIViewController, UITableViewDataSource, UITableV
         self.checkListSubtitle.text = question?.getSubTitle()
     }
     
-    let parts = ["loge antérieure","loge postérieure","loge interne","autres"]
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return parts.count
@@ -51,7 +52,7 @@ class CheckListViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     @IBAction func NextChecked(_ sender: UIButton) {
-        let controllerToSend = navigation.ReturnPageType(question: self.question!, response: "jambeDroite-precision")
+        let controllerToSend = navigation.ReturnPageType(question: self.question!, response: "loge posterieure")
         self.changeView(controller: controllerToSend!)
     }
     @IBAction func PreviousChecked(_ sender: UIButton) {
