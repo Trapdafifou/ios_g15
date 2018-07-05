@@ -12,8 +12,9 @@ class dataTransformer {
             if let jsonFilePath = Bundle.main.path(forResource:"data", ofType: "json"){
                 do{
                     let data = try Data(contentsOf: URL(fileURLWithPath: jsonFilePath), options: [])
+                    print(data, "data")
                     let json = JSON(data)
-                    
+                    print(json, "datatransfer")
                     let mainQuestion = Question(json: json["Seasonal"])
                     return mainQuestion
                 }catch{

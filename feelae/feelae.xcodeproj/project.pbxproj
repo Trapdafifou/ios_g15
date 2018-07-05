@@ -23,7 +23,6 @@
 		05722A8F20EE0D1400C0803D /* Heart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05722A8D20EE0D1300C0803D /* Heart.storyboard */; };
 		05722A9020EE0D1400C0803D /* rangeTemp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05722A8E20EE0D1300C0803D /* rangeTemp.storyboard */; };
 		05722A9220EE0E3100C0803D /* PainDoll.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05722A9120EE0E3100C0803D /* PainDoll.storyboard */; };
-		08FE7369EA1D5BCE6FD4C2A4 /* Pods_feelae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6872973B0B9C7A47012FEA3D /* Pods_feelae.framework */; };
 		1E54C56120EC007000D87FC2 /* checking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E54C56020EC007000D87FC2 /* checking.storyboard */; };
 		1E54C56920EC16F000D87FC2 /*  CheckListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E54C56820EC16F000D87FC2 /*  CheckListController.swift */; };
 		1E54C56B20EC1C3800D87FC2 /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E54C56A20EC1C3800D87FC2 /* TableView.storyboard */; };
@@ -31,6 +30,7 @@
 		1E54C56F20EC311B00D87FC2 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E54C56E20EC311B00D87FC2 /* PickerViewController.swift */; };
 		1EB912F220ECB48400239F69 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB912F120ECB48400239F69 /* Result.storyboard */; };
 		1EB912F420ECCD4300239F69 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB912F320ECCD4300239F69 /* ResultViewController.swift */; };
+		2A9D6D42CDD42B136B822C52 /* Pods_feelae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB742CC70298548084F6BE3C /* Pods_feelae.framework */; };
 		531AF9FC20EA283200E680DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AF9FB20EA283200E680DF /* AppDelegate.swift */; };
 		531AFA0120EA283200E680DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531AF9FF20EA283200E680DF /* Main.storyboard */; };
 		531AFA0320EA283300E680DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 531AFA0220EA283300E680DF /* Assets.xcassets */; };
@@ -55,7 +55,6 @@
 		05722A8D20EE0D1300C0803D /* Heart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Heart.storyboard; sourceTree = "<group>"; };
 		05722A8E20EE0D1300C0803D /* rangeTemp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = rangeTemp.storyboard; sourceTree = "<group>"; };
 		05722A9120EE0E3100C0803D /* PainDoll.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PainDoll.storyboard; sourceTree = "<group>"; };
-		09046C71812C2CD8795EECBF /* Pods-feelae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feelae.debug.xcconfig"; path = "Pods/Target Support Files/Pods-feelae/Pods-feelae.debug.xcconfig"; sourceTree = "<group>"; };
 		1E54C56020EC007000D87FC2 /* checking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = checking.storyboard; sourceTree = "<group>"; };
 		1E54C56820EC16F000D87FC2 /*  CheckListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " CheckListController.swift"; sourceTree = "<group>"; };
 		1E54C56A20EC1C3800D87FC2 /* TableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
@@ -70,8 +69,9 @@
 		531AFA0520EA283300E680DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		531AFA0720EA283300E680DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		531AFA0E20EA29A500E680DF /* SymptomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomeController.swift; sourceTree = "<group>"; };
-		6872973B0B9C7A47012FEA3D /* Pods_feelae.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_feelae.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90542399A95891C91651B2E2 /* Pods-feelae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feelae.release.xcconfig"; path = "Pods/Target Support Files/Pods-feelae/Pods-feelae.release.xcconfig"; sourceTree = "<group>"; };
+		54B9522992E4D1672DC3429A /* Pods-feelae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feelae.release.xcconfig"; path = "Pods/Target Support Files/Pods-feelae/Pods-feelae.release.xcconfig"; sourceTree = "<group>"; };
+		DB742CC70298548084F6BE3C /* Pods_feelae.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_feelae.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12C8244BCA8E1CA58006165 /* Pods-feelae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feelae.debug.xcconfig"; path = "Pods/Target Support Files/Pods-feelae/Pods-feelae.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08FE7369EA1D5BCE6FD4C2A4 /* Pods_feelae.framework in Frameworks */,
+				2A9D6D42CDD42B136B822C52 /* Pods_feelae.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,13 +104,30 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		23332C6C0078017ED208FB8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB742CC70298548084F6BE3C /* Pods_feelae.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33867F3CCBC5DD31E37AFE58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F12C8244BCA8E1CA58006165 /* Pods-feelae.debug.xcconfig */,
+				54B9522992E4D1672DC3429A /* Pods-feelae.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		531AF9EF20EA283200E680DF = {
 			isa = PBXGroup;
 			children = (
 				531AF9FA20EA283200E680DF /* feelae */,
 				531AF9F920EA283200E680DF /* Products */,
-				74A39DC8F867691DE3CD482C /* Pods */,
-				F4BBEC0945C2D92066E5C604 /* Frameworks */,
+				33867F3CCBC5DD31E37AFE58 /* Pods */,
+				23332C6C0078017ED208FB8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,23 +180,6 @@
 				1EB912F320ECCD4300239F69 /* ResultViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		74A39DC8F867691DE3CD482C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				09046C71812C2CD8795EECBF /* Pods-feelae.debug.xcconfig */,
-				90542399A95891C91651B2E2 /* Pods-feelae.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		F4BBEC0945C2D92066E5C604 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6872973B0B9C7A47012FEA3D /* Pods_feelae.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,7 +460,7 @@
 		};
 		531AFA0B20EA283300E680DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09046C71812C2CD8795EECBF /* Pods-feelae.debug.xcconfig */;
+			baseConfigurationReference = F12C8244BCA8E1CA58006165 /* Pods-feelae.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -479,7 +479,7 @@
 		};
 		531AFA0C20EA283300E680DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90542399A95891C91651B2E2 /* Pods-feelae.release.xcconfig */;
+			baseConfigurationReference = 54B9522992E4D1672DC3429A /* Pods-feelae.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
