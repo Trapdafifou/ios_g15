@@ -19,10 +19,10 @@ class RangeTempController: UIViewController {
     @IBAction func slider(_ sender: UISlider) {
         sliderLabel.text = String(format:"%.2f", sender.value) + "°C"
         self.valueSlider = sender.value
-        
     }
     
     @IBAction func ReturnButtonChecked(_ sender: UIButton) {
+        // self.dismiss(animated: true)
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func viewTapped(_ sender: UIButton) {
