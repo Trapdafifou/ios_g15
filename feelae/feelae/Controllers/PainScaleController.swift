@@ -8,20 +8,23 @@
 
 import UIKit
 
+protocol PainBodyToPainScaleProtocol:class {
+    func scaleClickedValue(value: Int)
+}
+
 class PainScaleController: UIViewController {
-    
     
     @IBOutlet var painScale: [UIButton]!
     
-    var question : Question? = nil
-    var response = ""
+     weak var delegate:PainBodyToPainScaleProtocol? = nil
+    let painScaleIndex: Int = 0
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
+        setScale()
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,14 +34,15 @@ class PainScaleController: UIViewController {
     
     
     func setScale () {
-        var indexTab = 0
-        
-        
         for scale in painScale {
-            scale.tag = indexTab
-            
-            indexTab += 1
+            scale.addTarget(self, action: #selector(scaleClicked(_:)), for: .touchUpInside)
         }
+    }
+    
+    @objc func scaleClicked(_ sender:UIButton!) {
+        
+        sender.backgroundColor = UIColor(red:247, green:134, blue:45, alpha:1.0)
+        delegate?.scaleClickedValue(value: sender.tag)
     }
 }
 
