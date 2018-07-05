@@ -3,8 +3,8 @@ import UIKit
 class RangeTempController: UIViewController {
     
     let navigation: NavigationControllerDelegate = NavigationControllerDelegate()
-    var question : Question? = nil
     var valueSlider : Float = 0.0
+    var question : Question? = nil
     var response = ""
     
     @IBOutlet weak var ReturnButton: UIButton!

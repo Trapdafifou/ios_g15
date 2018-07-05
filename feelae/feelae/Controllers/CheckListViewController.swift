@@ -8,9 +8,15 @@
 
 import UIKit
 
-class CheckListView: UIViewController, UITableViewDataSource, UITableViewDelegate  {
-
+class CheckListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
+    
+    var question : Question? = nil
+    var response = ""
+    let navigation: NavigationControllerDelegate = NavigationControllerDelegate()
+    
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var PreviousButton: UIButton!
+    @IBOutlet weak var ButtonNext: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,11 +43,23 @@ class CheckListView: UIViewController, UITableViewDataSource, UITableViewDelegat
             tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
         }
     }
+    
+    @IBAction func NextChecked(_ sender: UIButton) {
+        let controllerToSend = navigation.ReturnPageType(question: self.question!, response: "jambeDroite-precision")
+        self.changeView(controller: controllerToSend!)
+    }
+    @IBAction func PreviousChecked(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func changeView(controller: UIViewController){
+        self.navigationController?.pushViewController(controller, animated: false)
+    }
     // MARK: - Table view data source
 //
 //    override func numberOfSections(in tableView: UITableView) -> Int {
