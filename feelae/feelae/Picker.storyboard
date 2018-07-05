@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S5u-jz-zUO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,6 +9,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Picker View Controller-->
         <scene sceneID="5uq-8e-loP">
@@ -19,36 +27,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vos Symptômes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oa3-4F-Wxf">
-                                <rect key="frame" x="25" y="82" width="125" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="25" y="82" width="153.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donnez-nous plus d'informations sur vos douleurs pour une analyse poussée" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DON-DU-6yV">
-                                <rect key="frame" x="25" y="111" width="325" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="25" y="113.5" width="325" height="33"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZO-It-guA">
-                                <rect key="frame" x="25" y="168" width="197" height="24"/>
+                                <rect key="frame" x="25" y="162.5" width="197" height="24"/>
                                 <state key="normal" title="Ajouter un symptôme" image="button:lZO-It-guA:image">
                                     <color key="titleColor" red="0.043137254899999998" green="0.49803921569999998" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Qd-BX-iZr">
-                                <rect key="frame" x="25" y="593" width="155" height="30"/>
+                                <rect key="frame" x="25" y="589" width="155" height="34"/>
                                 <color key="backgroundColor" red="0.25098039220000001" green="0.30196078430000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
                                 <state key="normal" title="Retour">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="ReturnButtonChecked:" destination="S5u-jz-zUO" eventType="touchUpInside" id="lsu-LQ-MhO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ikc-VY-xYh">
-                                <rect key="frame" x="195" y="593" width="155" height="30"/>
-                                <color key="backgroundColor" red="0.25098039220000001" green="0.30196078430000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="195" y="589" width="155" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.52941176470588236" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
                                 <state key="normal" title="Suivant">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JHz-Kx-Fhh">
                                 <rect key="frame" x="56" y="575" width="263" height="2"/>
@@ -98,42 +116,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vos Symptômes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmO-94-nZl">
-                                <rect key="frame" x="25" y="82" width="125" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="25" y="82" width="153.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donnez-nous plus d'informations sur vos douleurs pour une analyse poussée" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aP-cp-WLu">
-                                <rect key="frame" x="25" y="111" width="325" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="25" y="113.5" width="325" height="33"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voI-cY-jzW">
-                                <rect key="frame" x="25" y="168" width="197" height="24"/>
+                                <rect key="frame" x="25" y="162.5" width="197" height="24"/>
                                 <state key="normal" title="Ajouter un symptôme" image="more">
                                     <color key="titleColor" red="0.043137254899999998" green="0.49803921569999998" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e3i-tV-PjV">
-                                <rect key="frame" x="25" y="216" width="325" height="30"/>
+                                <rect key="frame" x="25" y="210.5" width="325" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RNg-Z3-yhr">
-                                <rect key="frame" x="0.0" y="283" width="375" height="216"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RNg-Z3-yhr">
+                                <rect key="frame" x="25" y="277.5" width="325" height="216"/>
                                 <connections>
                                     <outlet property="dataSource" destination="TeC-cq-OcZ" id="XWN-76-3o7"/>
                                     <outlet property="delegate" destination="TeC-cq-OcZ" id="Vnq-Ec-hnS"/>
                                 </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QwM-uD-Rl0">
-                                <rect key="frame" x="25" y="593" width="155" height="30"/>
+                                <rect key="frame" x="25" y="589" width="155" height="34"/>
                                 <color key="backgroundColor" red="0.25098039220000001" green="0.30196078430000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
                                 <state key="normal" title="Retour">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NzV-4L-HsQ">
                                 <rect key="frame" x="56" y="575" width="263" height="2"/>
@@ -142,11 +166,17 @@
                                 </constraints>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8VW-30-0dd">
-                                <rect key="frame" x="195" y="593" width="155" height="30"/>
-                                <color key="backgroundColor" red="0.25098039220000001" green="0.30196078430000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="195" y="589" width="155" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.52941176470588236" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
                                 <state key="normal" title="Suivant">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -160,8 +190,10 @@
                             <constraint firstItem="uYg-GE-gKT" firstAttribute="trailing" secondItem="e3i-tV-PjV" secondAttribute="trailing" constant="25" id="JnZ-On-hFH"/>
                             <constraint firstItem="QwM-uD-Rl0" firstAttribute="width" secondItem="8VW-30-0dd" secondAttribute="width" id="KtR-MW-HEb"/>
                             <constraint firstItem="uYg-GE-gKT" firstAttribute="trailing" secondItem="8VW-30-0dd" secondAttribute="trailing" constant="25" id="Wpg-uS-LvF"/>
+                            <constraint firstItem="RNg-Z3-yhr" firstAttribute="trailing" secondItem="uYg-GE-gKT" secondAttribute="trailing" constant="25" id="XrQ-aI-B1P"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NzV-4L-HsQ" secondAttribute="trailing" constant="40" id="YEC-f7-v4E"/>
                             <constraint firstItem="e3i-tV-PjV" firstAttribute="leading" secondItem="uYg-GE-gKT" secondAttribute="leading" constant="25" id="YjP-Im-rlh"/>
+                            <constraint firstItem="RNg-Z3-yhr" firstAttribute="leading" secondItem="uYg-GE-gKT" secondAttribute="leading" constant="25" id="ZwN-tS-mFu"/>
                             <constraint firstItem="QwM-uD-Rl0" firstAttribute="leading" secondItem="uYg-GE-gKT" secondAttribute="leading" constant="25" id="bBI-i4-2f0"/>
                             <constraint firstItem="8VW-30-0dd" firstAttribute="leading" secondItem="QwM-uD-Rl0" secondAttribute="trailing" constant="15" id="dHC-WZ-6Hi"/>
                             <constraint firstItem="1aP-cp-WLu" firstAttribute="top" secondItem="nmO-94-nZl" secondAttribute="bottom" constant="8" id="dNX-GW-YRr"/>
@@ -194,29 +226,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vos Symptômes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAk-Ju-kXn">
-                                <rect key="frame" x="25" y="82" width="125" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="25" y="82" width="153.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donnez-nous plus d'informations sur vos douleurs pour une analyse poussée" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zP-qh-1CQ">
-                                <rect key="frame" x="25" y="111" width="325" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="25" y="113.5" width="325" height="33"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udV-LZ-Wnb">
-                                <rect key="frame" x="25" y="168" width="197" height="24"/>
+                                <rect key="frame" x="25" y="162.5" width="197" height="24"/>
                                 <state key="normal" title="Ajouter un symptôme" image="more">
                                     <color key="titleColor" red="0.043137254899999998" green="0.49803921569999998" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXD-S7-Wln">
-                                <rect key="frame" x="25" y="593" width="155" height="30"/>
+                                <rect key="frame" x="25" y="589" width="155" height="34"/>
                                 <color key="backgroundColor" red="0.25098039220000001" green="0.30196078430000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
                                 <state key="normal" title="Retour">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LaJ-ll-nz7">
                                 <rect key="frame" x="56" y="575" width="263" height="2"/>
@@ -225,18 +263,30 @@
                                 </constraints>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c26-P0-Wo3">
-                                <rect key="frame" x="195" y="593" width="155" height="30"/>
-                                <color key="backgroundColor" red="0.25098039220000001" green="0.30196078430000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="195" y="589" width="155" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.52941176470588236" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
                                 <state key="normal" title="Suivant">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9d-N8-WoO">
-                                <rect key="frame" x="25" y="202" width="230" height="30"/>
+                                <rect key="frame" x="25" y="196.5" width="230" height="29"/>
                                 <color key="backgroundColor" red="0.043137254899999998" green="0.49803921569999998" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Température corporelle élévée">
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
+                                <state key="normal" title="Température corporelle élevée">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -268,14 +318,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3lI-6V-UkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1798" y="267"/>
-        </scene>
-        <!--ResultsViewController-->
-        <scene sceneID="wBf-So-lZg">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Result" referencedIdentifier="ResultsViewController" id="G98-ZD-IfK" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wGI-Kt-VbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2574" y="266"/>
         </scene>
     </scenes>
     <resources>
