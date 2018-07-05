@@ -102,6 +102,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dmn-sa-sBy"/>
                     </view>
+                    <connections>
+                        <outlet property="ReturnButton" destination="8Qd-BX-iZr" id="TFw-H6-X5H"/>
+                        <outlet property="nextButton" destination="Ikc-VY-xYh" id="sKf-xD-cQY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="raY-bT-chb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
