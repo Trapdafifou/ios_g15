@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PainScaleController: UIViewController {
     
     
     @IBOutlet var painScale: [UIButton]!
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-       
+        
     }
     
     override func didReceiveMemoryWarning() {
