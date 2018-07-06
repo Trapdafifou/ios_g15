@@ -87,6 +87,15 @@ class NavigationControllerDelegate {
             controller.question = self.question
             
             return controller
+        }
+        else if (self.question?.getPageType() == "addSymptoms"){
+            let storyboard:UIStoryboard = UIStoryboard(name: "Picker", bundle: nil)
+            
+            let controller = storyboard.instantiateViewController(withIdentifier: "PickerViewController") as! PickerViewController
+            
+            controller.question = self.question
+            
+            return controller
         }else{
             print(self.question?.getPageType(), "pagetype")
         }

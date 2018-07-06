@@ -6,6 +6,11 @@ class PickerViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var textBox: UITextField!
     @IBOutlet weak var dropDown: UIPickerView!
     
+    let dataTransfer: dataTransformer = dataTransformer()
+    let navigation: NavigationControllerDelegate = NavigationControllerDelegate()
+    var question : Question? = nil
+    @IBOutlet weak var Returnbutton: UIButton!
+    
     var list = ["Température corporelle élevée", "Température corporelle élevée2", "Température corporelle élevée3"]
     
     override func viewDidLoad() {
@@ -43,6 +48,9 @@ class PickerViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         self.dropDown.isHidden = true
         
     }
+    @IBAction func ReturnbuttonChecked(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
@@ -53,5 +61,9 @@ class PickerViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             textField.endEditing(true)
         }
         
+    }
+    
+    func changeView(controller: UIViewController){
+        self.navigationController?.pushViewController(controller, animated: false)
     }
 }
