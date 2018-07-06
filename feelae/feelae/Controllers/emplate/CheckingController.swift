@@ -27,7 +27,7 @@ class CheckingController: UIViewController, ChildToParentProtocol{
             let controllerToSend = navigation.ReturnPageType(question: self.question!, response: "oui")
             self.changeView(controller: controllerToSend!)
         }else if(question?.getSubTitle() == "Sélectionnez la zone douloureuse"){
-            let controllerToSend = navigation.ReturnPageType(question: self.question!, response: "jambeDroite-precision")
+            let controllerToSend = navigation.ReturnPageType(question: self.question!, response: self.response)
             self.changeView(controller: controllerToSend!)
         }
         
@@ -55,7 +55,6 @@ class CheckingController: UIViewController, ChildToParentProtocol{
     }
     
     func buttonClicked(value: String?) {
-        var controllerToSend = navigation.ReturnPageType(question: question!, response: "jambeDroite")
-        self.changeView(controller: controllerToSend!)
+        self.response = value
     }
 }
