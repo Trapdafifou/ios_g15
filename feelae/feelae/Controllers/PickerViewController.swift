@@ -4,6 +4,8 @@ class PickerViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     
     @IBOutlet weak var textBox: UITextField!
+    
+    
     @IBOutlet weak var dropDown: UIPickerView!
     
     let dataTransfer: dataTransformer = dataTransformer()
@@ -11,7 +13,9 @@ class PickerViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     var question : Question? = nil
     @IBOutlet weak var Returnbutton: UIButton!
     
+    @IBOutlet weak var ButtonNext: UIButton!
     var list = [String]()
+    
     
     
     override func viewDidLoad() {
@@ -50,7 +54,14 @@ class PickerViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         self.textBox.text = self.list[row]
         self.dropDown.isHidden = true
         
+        
+        
     }
+    @IBAction func NextChecked(_ sender: UIButton) {
+        let controllerToSend = navigation.ReturnPageType(question: self.question!, response: "headache")
+        self.changeView(controller: controllerToSend!)
+    }
+    
     @IBAction func ReturnbuttonChecked(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
