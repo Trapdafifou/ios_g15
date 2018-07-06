@@ -118,8 +118,9 @@ class BodyController: UIViewController {
         var indexTab = 0
         for button in buttonsTab {
             emptyButton(button: button)
-            fillButton(button: button)
+            fillButton(button: button, state: .normal)
             button.addTarget(self, action: #selector(setBackground(_:)), for: .touchUpInside)
+            selectedButton(button: button)
             indexTab += 1
         }
     }
@@ -154,9 +155,26 @@ class BodyController: UIViewController {
         button.alpha = 0.2
     }
     
-    func fillButton (button: UIButton) {
+    func fillButton (button: UIButton, state: UIControlState) {
         let image = UIImage(named: "radio-on-button")!.resized(newSize: CGSize(width: 19, height: 19))
-        button.setImage(image, for: .normal)
+        button.setImage(image, for: state)
+    }
+    
+    func selectedButton(button: UIButton) {
+        if(!button.isEnabled) {
+            let posX = button.frame.origin.x + button.frame.width / 2
+            let posY = button.frame.origin.y + button.frame.height / 2 - 19
+            
+            bodyPartName.text = bodyPartTab[button.tag]?["name"] as! String
+            redrawLabel(label: bodyPartName)
+            bodyPartName.center = CGPoint(x: posX, y:posY)
+            bodyPartName.layer.zPosition = 1;
+            button.alpha = 1
+            fillButton(button: button, state: .disabled)
+        } else {
+            button.alpha = 0.2
+            
+        }
     }
 
 }

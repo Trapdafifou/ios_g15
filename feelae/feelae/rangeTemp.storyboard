@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -23,29 +23,29 @@
             <objects>
                 <viewController storyboardIdentifier="RangeTempController" id="Bk0-hE-OdJ" customClass="RangeTempController" customModule="feelae" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w5m-gx-oVZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Température corporelle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prh-d1-ZZI">
-                                <rect key="frame" x="25" y="63" width="325" height="21"/>
+                                <rect key="frame" x="25" y="87" width="325" height="21"/>
                                 <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suivant votre fréquence cardiaque nous allons pouvoir diagnostiqué ou valider différent symptome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5X-U2-18o">
-                                <rect key="frame" x="25" y="97" width="325" height="49.5"/>
+                                <rect key="frame" x="25" y="120.99999999999999" width="325" height="49.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9n0-b9-jvb">
-                                <rect key="frame" x="120.5" y="185.5" width="134.5" height="77"/>
+                                <rect key="frame" x="120.66666666666667" y="209.33333333333334" width="134.33333333333331" height="77.000000000000028"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="66"/>
                                 <color key="textColor" red="0.0" green="0.95294117647058818" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="35" minValue="0.0" maxValue="42" translatesAutoresizingMaskIntoConstraints="NO" id="TCY-kW-8x5">
-                                <rect key="frame" x="23" y="387" width="329" height="31"/>
+                                <rect key="frame" x="23" y="498" width="329" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.0" green="0.95294117647058818" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="maximumTrackTintColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="thumbTintColor" red="0.0" green="0.95294117647058818" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
@@ -54,7 +54,7 @@
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JId-Jp-yuw">
-                                <rect key="frame" x="25" y="589" width="155" height="34"/>
+                                <rect key="frame" x="25" y="734" width="155" height="34"/>
                                 <color key="backgroundColor" red="0.25098039220000001" green="0.30196078430000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
                                 <state key="normal" title="Retour">
@@ -70,7 +70,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuc-ic-Qz7">
-                                <rect key="frame" x="195" y="589" width="155" height="34"/>
+                                <rect key="frame" x="195" y="734" width="155" height="34"/>
                                 <color key="backgroundColor" red="0.0" green="0.52941176470588236" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
                                 <state key="normal" title="Suivant">
@@ -86,21 +86,21 @@
                                 </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vET-IN-Dbh">
-                                <rect key="frame" x="56" y="575" width="263" height="2"/>
+                                <rect key="frame" x="56" y="720" width="263" height="2"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="2" id="0D0-pg-Gqa"/>
                                     <constraint firstAttribute="height" constant="2" id="meY-88-QxJ"/>
                                 </constraints>
                             </progressView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telephone" translatesAutoresizingMaskIntoConstraints="NO" id="RdA-E4-mO5">
-                                <rect key="frame" x="321" y="30" width="29" height="29"/>
+                                <rect key="frame" x="321" y="54" width="29" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="Fez-gm-ceu"/>
                                     <constraint firstAttribute="width" constant="29" id="yqs-yE-13v"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GF8-6W-HsW">
-                                <rect key="frame" x="25" y="332.5" width="325" height="1"/>
+                                <rect key="frame" x="25" y="356.33333333333331" width="325" height="1"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="Vwm-hJ-90e"/>

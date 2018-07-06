@@ -10,6 +10,7 @@ import UIKit
 
 class PainBodyController: UIViewController, PainBodyToPainScaleProtocol {
     
+    @IBOutlet weak var scaleHolder: UIView!
     var response: String = ""
     var question : Question? = nil
     
@@ -26,6 +27,8 @@ class PainBodyController: UIViewController, PainBodyToPainScaleProtocol {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        scaleHolder.layer.zPosition = 2
     }
 
     override func didReceiveMemoryWarning() {
