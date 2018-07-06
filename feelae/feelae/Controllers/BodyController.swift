@@ -29,27 +29,83 @@ class BodyController: UIViewController {
     @IBOutlet weak var bodyPartName: UILabel!
     @IBOutlet var buttonsTab: [UIButton]!
     
-    var bodyPartTab: [Int: String] = [
-            0: "Tête",
-            1: "Cou",
-            2: "Torse",
-            3: "Estomac",
-            4: "Bras droit",
-            5: "Avant-bras droit",
-            6: "Main droite",
-            7: "Bras gauche",
-            8: "Avant-bras gauche",
-            9: "Main gauche",
-            10: "Cuisse gauche",
-            11: "Bas de jambe droite",
-            12: "Cuisse droite",
-            13: "Bas de jambe gauche"
-        ]
+    var bodyPartTab: [Int: [String: Any]] = [
+        0: [
+            "name": "Tête",
+            "value": "head",
+            "checked": false,
+        ],
+        1: [
+            "name": "Cou",
+            "value": "head",
+            "checked": false,
+        ],
+        2: [
+            "name": "Torse",
+            "value": "head",
+            "checked": false,
+        ],
+        3: [
+            "name": "Estomac",
+            "value": "head",
+            "checked": false,
+        ],
+        4: [
+            "name": "Bras Droit",
+            "value": "head",
+            "checked": false,
+        ],
+        5: [
+            "name": "Avant-bras droit",
+            "value": "head",
+            "checked": false,
+        ],
+        6: [
+            "name": "Main droite",
+            "value": "head",
+            "checked": false,
+        ],
+        7: [
+            "name": "Bras gauche",
+            "value": "head",
+            "checked": false,
+        ],
+        8: [
+            "name": "Avant-bras gauche",
+            "value": "head",
+            "checked": false,
+        ],
+        9: [
+            "name": "Main gauche",
+            "value": "head",
+            "checked": false,
+        ],
+        10: [
+            "name": "Cuisse droite",
+            "value": "jambeDroite",
+            "checked": false,
+        ],
+        11: [
+            "name": "Bas de jambe droite",
+            "value": "head",
+            "checked": false,
+        ],
+        12:[
+            "name": "Cuisse Gauche",
+            "value": "head",
+            "checked": false,
+        ],
+        13: [
+            "name": "Bas de jambe gauche",
+            "value": "head",
+            "checked": false,
+        ],
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+    
         setButton()
     }
 
@@ -76,13 +132,16 @@ class BodyController: UIViewController {
         let posX = sender.frame.origin.x + sender.frame.width / 2
         let posY = sender.frame.origin.y + sender.frame.height / 2 - 19
         
-        bodyPartName.text = bodyPartTab[sender.tag]
+        bodyPartName.text = bodyPartTab[sender.tag]?["name"] as! String
         redrawLabel(label: bodyPartName)
         bodyPartName.center = CGPoint(x: posX, y:posY)
+        print(bodyPartName.frame.origin.x, bodyPartName.frame.origin.y)
         bodyPartName.layer.zPosition = 1;
         sender.alpha = 1
         
-        delegate?.buttonClicked(value: bodyPartTab[sender.tag])
+        delegate?.buttonClicked(value: bodyPartTab[sender.tag]?["value"] as! String)
+        print(bodyPartName.frame.origin.x, bodyPartName.frame.origin.y)
+        sender.alpha = 1
     }
     
     func redrawLabel(label: UILabel) {
