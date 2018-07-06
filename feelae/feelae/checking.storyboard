@@ -117,6 +117,8 @@
                         <outlet property="BodyContainer" destination="Fza-zs-uCY" id="QtS-bF-Kc6"/>
                         <outlet property="ButtonSuivant" destination="c10-jg-jGX" id="s9P-ee-w7F"/>
                         <outlet property="ReturnButton" destination="RKp-IS-iLQ" id="wnY-D2-cBb"/>
+                        <outlet property="subtitleResult" destination="l1I-8g-ibs" id="lyQ-o7-QT3"/>
+                        <outlet property="titleResult" destination="334-Wa-trF" id="t6z-yq-Ao5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CcW-N8-eBq" userLabel="First Responder" sceneMemberID="firstResponder"/>

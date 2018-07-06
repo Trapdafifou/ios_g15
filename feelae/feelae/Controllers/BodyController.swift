@@ -82,7 +82,7 @@ class BodyController: UIViewController {
         ],
         10: [
             "name": "Cuisse droite",
-            "value": "jambeDroite",
+            "value": "jambeDroite-precision",
             "checked": false,
         ],
         11: [
@@ -135,13 +135,9 @@ class BodyController: UIViewController {
         bodyPartName.text = bodyPartTab[sender.tag]?["name"] as! String
         redrawLabel(label: bodyPartName)
         bodyPartName.center = CGPoint(x: posX, y:posY)
-        print(bodyPartName.frame.origin.x, bodyPartName.frame.origin.y)
         bodyPartName.layer.zPosition = 1;
         sender.alpha = 1
-        
         delegate?.buttonClicked(value: bodyPartTab[sender.tag]?["value"] as! String)
-        print(bodyPartName.frame.origin.x, bodyPartName.frame.origin.y)
-        sender.alpha = 1
     }
     
     func redrawLabel(label: UILabel) {
@@ -161,10 +157,6 @@ class BodyController: UIViewController {
     func fillButton (button: UIButton) {
         let image = UIImage(named: "radio-on-button")!.resized(newSize: CGSize(width: 19, height: 19))
         button.setImage(image, for: .normal)
-    }
-    
-    func changeView(controller: UIViewController){
-        self.navigationController?.pushViewController(controller, animated: false)
     }
 
 }
