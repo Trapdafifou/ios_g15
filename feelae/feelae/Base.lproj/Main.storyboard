@@ -77,7 +77,7 @@
                                             <constraint firstAttribute="height" constant="29" id="S9N-Wq-gAo"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode de gripe en France" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0i-Fv-fI6">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode de gripe en France" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0i-Fv-fI6">
                                         <rect key="frame" x="25" y="43" width="325" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
                                         <nil key="textColor"/>
