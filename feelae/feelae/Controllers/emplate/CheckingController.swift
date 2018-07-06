@@ -10,10 +10,13 @@ import UIKit
 
 class CheckingController: UIViewController, ChildToParentProtocol{
     
+    @IBOutlet weak var titleResult: UILabel!
+    @IBOutlet weak var subtitleResult: UILabel!
+    
     @IBOutlet weak var ReturnButton: UIButton!
     @IBOutlet weak var ButtonSuivant: UIButton!
     @IBOutlet weak var BodyContainer: UIView!
-    
+
     let navigation: NavigationControllerDelegate = NavigationControllerDelegate()
     @IBAction func ReturnButtonChecked(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
@@ -44,6 +47,9 @@ class CheckingController: UIViewController, ChildToParentProtocol{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        titleResult.text = question?.getTitle()
+        subtitleResult.text = question?.getSubTitle()
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -55,6 +61,6 @@ class CheckingController: UIViewController, ChildToParentProtocol{
     }
     
     func buttonClicked(value: String?) {
-        self.response = value
+        self.response = value!
     }
 }

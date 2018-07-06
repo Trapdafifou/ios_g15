@@ -35,13 +35,18 @@ class PainScaleController: UIViewController {
     
     func setScale () {
         for scale in painScale {
+            scale.layer.borderWidth = 0.5
+            scale.layer.borderColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1).cgColor
+            scale.addTarget(self, action: #selector(backgroundAction(_:)), for: .touchDown)
             scale.addTarget(self, action: #selector(scaleClicked(_:)), for: .touchUpInside)
         }
     }
     
+    @objc func backgroundAction(_ sender:UIButton!) {
+        sender.backgroundColor = UIColor(red:247.0/255.0, green:134.0/255.0, blue:45.0/255.0, alpha:1.0)
+    }
+    
     @objc func scaleClicked(_ sender:UIButton!) {
-        
-        sender.backgroundColor = UIColor(red:247, green:134, blue:45, alpha:1.0)
         delegate?.scaleClickedValue(value: sender.tag)
     }
 }
