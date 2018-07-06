@@ -16,12 +16,10 @@
 		05722A8620EE0BBE00C0803D /* BtnOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05722A8020EE0BBD00C0803D /* BtnOptions.swift */; };
 		05722A8720EE0BBE00C0803D /* HeartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05722A8120EE0BBD00C0803D /* HeartViewController.swift */; };
 		05722A8820EE0BBE00C0803D /* RangeTempController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05722A8220EE0BBD00C0803D /* RangeTempController.swift */; };
-		05722A8920EE0BBE00C0803D /* PainBodyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05722A8320EE0BBE00C0803D /* PainBodyController.swift */; };
 		05722A8A20EE0BBE00C0803D /* PainScaleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05722A8420EE0BBE00C0803D /* PainScaleController.swift */; };
 		05722A8C20EE0C5400C0803D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05722A8B20EE0C5400C0803D /* ViewController.swift */; };
 		05722A8F20EE0D1400C0803D /* Heart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05722A8D20EE0D1300C0803D /* Heart.storyboard */; };
 		05722A9020EE0D1400C0803D /* rangeTemp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05722A8E20EE0D1300C0803D /* rangeTemp.storyboard */; };
-		05722A9220EE0E3100C0803D /* PainBody.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05722A9120EE0E3100C0803D /* PainBody.storyboard */; };
 		1E54C56120EC007000D87FC2 /* checking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E54C56020EC007000D87FC2 /* checking.storyboard */; };
 		1E54C56B20EC1C3800D87FC2 /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E54C56A20EC1C3800D87FC2 /* TableView.storyboard */; };
 		1E54C56D20EC2B3C00D87FC2 /* Picker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E54C56C20EC2B3C00D87FC2 /* Picker.storyboard */; };
@@ -32,32 +30,32 @@
 		1ED212E620EE4A34005D2EF6 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1ED212E320EE4A32005D2EF6 /* Raleway-Bold.ttf */; };
 		1ED212E720EE4A34005D2EF6 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1ED212E420EE4A33005D2EF6 /* Raleway-Medium.ttf */; };
 		1ED212E820EE4A34005D2EF6 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1ED212E520EE4A33005D2EF6 /* Raleway-Regular.ttf */; };
+		1EF300D720EEF81200B6A3B7 /* PainBodyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF300D420EEF81200B6A3B7 /* PainBodyController.swift */; };
+		1EF300D820EEF81200B6A3B7 /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF300D520EEF81200B6A3B7 /* TemperatureViewController.swift */; };
+		1EF300D920EEF81200B6A3B7 /* CheckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF300D620EEF81200B6A3B7 /* CheckListViewController.swift */; };
+		1EF300DB20EEF81B00B6A3B7 /* PainBody.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EF300DA20EEF81B00B6A3B7 /* PainBody.storyboard */; };
 		2A9D6D42CDD42B136B822C52 /* Pods_feelae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB742CC70298548084F6BE3C /* Pods_feelae.framework */; };
 		531AF9FC20EA283200E680DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AF9FB20EA283200E680DF /* AppDelegate.swift */; };
 		531AFA0120EA283200E680DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531AF9FF20EA283200E680DF /* Main.storyboard */; };
 		531AFA0320EA283300E680DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 531AFA0220EA283300E680DF /* Assets.xcassets */; };
 		531AFA0620EA283300E680DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531AFA0420EA283300E680DF /* LaunchScreen.storyboard */; };
 		531AFA0F20EA29A500E680DF /* SymptomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AFA0E20EA29A500E680DF /* SymptomeController.swift */; };
-		5374B06120EEB1A9004CA90B /* CheckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5374B05F20EEB1A8004CA90B /* CheckListViewController.swift */; };
-		5374B06220EEB1A9004CA90B /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5374B06020EEB1A8004CA90B /* TemperatureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0515B3EB20ED2C2500D1A3FA /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationControllerDelegate.swift; path = emplate/NavigationControllerDelegate.swift; sourceTree = "<group>"; };
 		0515B3ED20ED55DA00D1A3FA /* CheckingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckingController.swift; path = emplate/CheckingController.swift; sourceTree = "<group>"; };
 		055103CE20ECED32009F244E /* PainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PainController.swift; sourceTree = "<group>"; };
-		05722A7B20EE09B800C0803D /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = feelae/emplate/data.json; sourceTree = SOURCE_ROOT; };
-		05722A7C20EE09B800C0803D /* question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = question.swift; path = feelae/emplate/question.swift; sourceTree = SOURCE_ROOT; };
+		05722A7B20EE09B800C0803D /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = feelae/Model/data.json; sourceTree = SOURCE_ROOT; };
+		05722A7C20EE09B800C0803D /* question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = question.swift; path = feelae/Model/question.swift; sourceTree = SOURCE_ROOT; };
 		05722A7F20EE0BB800C0803D /* BodyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyController.swift; sourceTree = "<group>"; };
 		05722A8020EE0BBD00C0803D /* BtnOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtnOptions.swift; sourceTree = "<group>"; };
 		05722A8120EE0BBD00C0803D /* HeartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartViewController.swift; sourceTree = "<group>"; };
 		05722A8220EE0BBD00C0803D /* RangeTempController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RangeTempController.swift; path = emplate/RangeTempController.swift; sourceTree = "<group>"; };
-		05722A8320EE0BBE00C0803D /* PainBodyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PainBodyController.swift; sourceTree = "<group>"; };
 		05722A8420EE0BBE00C0803D /* PainScaleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PainScaleController.swift; sourceTree = "<group>"; };
 		05722A8B20EE0C5400C0803D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = emplate/ViewController.swift; sourceTree = "<group>"; };
 		05722A8D20EE0D1300C0803D /* Heart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Heart.storyboard; sourceTree = "<group>"; };
 		05722A8E20EE0D1300C0803D /* rangeTemp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = rangeTemp.storyboard; sourceTree = "<group>"; };
-		05722A9120EE0E3100C0803D /* PainBody.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PainBody.storyboard; sourceTree = "<group>"; };
 		1E54C56020EC007000D87FC2 /* checking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = checking.storyboard; sourceTree = "<group>"; };
 		1E54C56A20EC1C3800D87FC2 /* TableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
 		1E54C56C20EC2B3C00D87FC2 /* Picker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Picker.storyboard; sourceTree = "<group>"; };
@@ -68,6 +66,10 @@
 		1ED212E320EE4A32005D2EF6 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		1ED212E420EE4A33005D2EF6 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
 		1ED212E520EE4A33005D2EF6 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		1EF300D420EEF81200B6A3B7 /* PainBodyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PainBodyController.swift; sourceTree = "<group>"; };
+		1EF300D520EEF81200B6A3B7 /* TemperatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
+		1EF300D620EEF81200B6A3B7 /* CheckListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckListViewController.swift; sourceTree = "<group>"; };
+		1EF300DA20EEF81B00B6A3B7 /* PainBody.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PainBody.storyboard; sourceTree = "<group>"; };
 		531AF9F820EA283200E680DF /* feelae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = feelae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		531AF9FB20EA283200E680DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		531AFA0020EA283200E680DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,8 +77,6 @@
 		531AFA0520EA283300E680DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		531AFA0720EA283300E680DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		531AFA0E20EA29A500E680DF /* SymptomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomeController.swift; sourceTree = "<group>"; };
-		5374B05F20EEB1A8004CA90B /* CheckListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckListViewController.swift; sourceTree = "<group>"; };
-		5374B06020EEB1A8004CA90B /* TemperatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
 		54B9522992E4D1672DC3429A /* Pods-feelae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feelae.release.xcconfig"; path = "Pods/Target Support Files/Pods-feelae/Pods-feelae.release.xcconfig"; sourceTree = "<group>"; };
 		DB742CC70298548084F6BE3C /* Pods_feelae.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_feelae.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12C8244BCA8E1CA58006165 /* Pods-feelae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feelae.debug.xcconfig"; path = "Pods/Target Support Files/Pods-feelae/Pods-feelae.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,15 +94,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05722A7720EE099100C0803D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				05722A7B20EE09B800C0803D /* data.json */,
-				05722A7C20EE09B800C0803D /* question.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		1ED212E120EE498B005D2EF6 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +111,15 @@
 			);
 			name = Transformer;
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		1EF300D320EEF7DE00B6A3B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05722A7B20EE09B800C0803D /* data.json */,
+				05722A7C20EE09B800C0803D /* question.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		23332C6C0078017ED208FB8D /* Frameworks */ = {
@@ -160,16 +160,16 @@
 		531AF9FA20EA283200E680DF /* feelae */ = {
 			isa = PBXGroup;
 			children = (
+				1EF300DA20EEF81B00B6A3B7 /* PainBody.storyboard */,
+				1EF300D320EEF7DE00B6A3B7 /* Model */,
 				1ED212E220EE4998005D2EF6 /* Transformer */,
 				1ED212E120EE498B005D2EF6 /* fonts */,
 				05722A8020EE0BBD00C0803D /* BtnOptions.swift */,
-				05722A7720EE099100C0803D /* Model */,
 				531AFA0D20EA295300E680DF /* Controllers */,
 				531AF9FB20EA283200E680DF /* AppDelegate.swift */,
 				531AF9FF20EA283200E680DF /* Main.storyboard */,
 				531AFA0220EA283300E680DF /* Assets.xcassets */,
 				531AFA0420EA283300E680DF /* LaunchScreen.storyboard */,
-				05722A9120EE0E3100C0803D /* PainBody.storyboard */,
 				531AFA0720EA283300E680DF /* Info.plist */,
 				05722A8D20EE0D1300C0803D /* Heart.storyboard */,
 				05722A8E20EE0D1300C0803D /* rangeTemp.storyboard */,
@@ -184,12 +184,12 @@
 		531AFA0D20EA295300E680DF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1EF300D620EEF81200B6A3B7 /* CheckListViewController.swift */,
+				1EF300D420EEF81200B6A3B7 /* PainBodyController.swift */,
+				1EF300D520EEF81200B6A3B7 /* TemperatureViewController.swift */,
 				05722A8B20EE0C5400C0803D /* ViewController.swift */,
 				05722A7F20EE0BB800C0803D /* BodyController.swift */,
 				05722A8120EE0BBD00C0803D /* HeartViewController.swift */,
-				05722A8320EE0BBE00C0803D /* PainBodyController.swift */,
-				5374B05F20EEB1A8004CA90B /* CheckListViewController.swift */,
-				5374B06020EEB1A8004CA90B /* TemperatureViewController.swift */,
 				05722A8420EE0BBE00C0803D /* PainScaleController.swift */,
 				05722A8220EE0BBD00C0803D /* RangeTempController.swift */,
 				0515B3ED20ED55DA00D1A3FA /* CheckingController.swift */,
@@ -262,12 +262,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF300DB20EEF81B00B6A3B7 /* PainBody.storyboard in Resources */,
 				531AFA0620EA283300E680DF /* LaunchScreen.storyboard in Resources */,
 				1ED212E720EE4A34005D2EF6 /* Raleway-Medium.ttf in Resources */,
 				531AFA0320EA283300E680DF /* Assets.xcassets in Resources */,
 				1ED212E820EE4A34005D2EF6 /* Raleway-Regular.ttf in Resources */,
 				1E54C56120EC007000D87FC2 /* checking.storyboard in Resources */,
-				05722A9220EE0E3100C0803D /* PainBody.storyboard in Resources */,
 				05722A8F20EE0D1400C0803D /* Heart.storyboard in Resources */,
 				05722A9020EE0D1400C0803D /* rangeTemp.storyboard in Resources */,
 				05722A7D20EE09B800C0803D /* data.json in Resources */,
@@ -326,23 +326,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				05722A7E20EE09B800C0803D /* question.swift in Sources */,
+				1EF300D820EEF81200B6A3B7 /* TemperatureViewController.swift in Sources */,
 				1ED212E020EE497D005D2EF6 /* dataTransformer.swift in Sources */,
 				1E54C56F20EC311B00D87FC2 /* PickerViewController.swift in Sources */,
-				5374B06120EEB1A9004CA90B /* CheckListViewController.swift in Sources */,
 				531AF9FC20EA283200E680DF /* AppDelegate.swift in Sources */,
 				05722A8620EE0BBE00C0803D /* BtnOptions.swift in Sources */,
 				05722A8720EE0BBE00C0803D /* HeartViewController.swift in Sources */,
 				05722A8820EE0BBE00C0803D /* RangeTempController.swift in Sources */,
 				05722A8520EE0BBE00C0803D /* BodyController.swift in Sources */,
-				05722A8920EE0BBE00C0803D /* PainBodyController.swift in Sources */,
 				05722A8A20EE0BBE00C0803D /* PainScaleController.swift in Sources */,
 				05722A8C20EE0C5400C0803D /* ViewController.swift in Sources */,
 				531AFA0F20EA29A500E680DF /* SymptomeController.swift in Sources */,
 				0515B3EC20ED2C2600D1A3FA /* NavigationControllerDelegate.swift in Sources */,
+				1EF300D920EEF81200B6A3B7 /* CheckListViewController.swift in Sources */,
 				0515B3EE20ED55DA00D1A3FA /* CheckingController.swift in Sources */,
+				1EF300D720EEF81200B6A3B7 /* PainBodyController.swift in Sources */,
 				1EB912F420ECCD4300239F69 /* ResultViewController.swift in Sources */,
 				055103CF20ECED3B009F244E /* PainController.swift in Sources */,
-				5374B06220EEB1A9004CA90B /* TemperatureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MpJ-WX-fxh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MpJ-WX-fxh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -77,8 +77,8 @@
                                             <constraint firstAttribute="height" constant="29" id="S9N-Wq-gAo"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode de gripe en France" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0i-Fv-fI6">
-                                        <rect key="frame" x="58" y="43" width="260" height="23.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode de gripe en France" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0i-Fv-fI6">
+                                        <rect key="frame" x="25" y="43" width="325" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -174,8 +174,8 @@
                                             <action selector="NoAction:" destination="Wur-Fq-FBy" eventType="touchUpInside" id="S3A-cE-Txs"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pensez-vous avoir la grippe ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93d-Zp-aUc">
-                                        <rect key="frame" x="50" y="153" width="277" height="79"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pensez-vous avoir la grippe ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93d-Zp-aUc">
+                                        <rect key="frame" x="25" y="177" width="325" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -186,12 +186,15 @@
                                     <constraint firstAttribute="trailing" secondItem="cq9-fd-jGl" secondAttribute="trailing" constant="40" id="0i2-NJ-HlX"/>
                                     <constraint firstItem="93d-Zp-aUc" firstAttribute="top" secondItem="N7O-GG-zjt" secondAttribute="bottom" constant="81" id="3Wf-kZ-q7m"/>
                                     <constraint firstItem="cq9-fd-jGl" firstAttribute="leading" secondItem="I7Y-VD-hmK" secondAttribute="leading" constant="40" id="3hJ-Xz-fvH"/>
+                                    <constraint firstAttribute="trailing" secondItem="o0i-Fv-fI6" secondAttribute="trailing" constant="25" id="7Lh-E1-VkK"/>
+                                    <constraint firstAttribute="trailing" secondItem="93d-Zp-aUc" secondAttribute="trailing" constant="25" id="BjP-4J-Sfc"/>
                                     <constraint firstItem="gOH-9J-1hg" firstAttribute="centerY" secondItem="I7Y-VD-hmK" secondAttribute="centerY" id="DGv-Nj-4qw"/>
                                     <constraint firstItem="WSG-T1-uhV" firstAttribute="top" secondItem="N7O-GG-zjt" secondAttribute="bottom" constant="39.333333333333343" id="Gz5-xC-3Ka"/>
                                     <constraint firstItem="7Hg-X9-hcF" firstAttribute="width" secondItem="1qH-RB-hwe" secondAttribute="width" id="HAa-fR-Le1"/>
                                     <constraint firstItem="o0i-Fv-fI6" firstAttribute="top" secondItem="I7Y-VD-hmK" secondAttribute="top" constant="43" id="IOv-IE-LxS"/>
                                     <constraint firstItem="N7O-GG-zjt" firstAttribute="centerX" secondItem="I7Y-VD-hmK" secondAttribute="centerX" id="Iyw-FY-0iA"/>
                                     <constraint firstItem="7Hg-X9-hcF" firstAttribute="leading" secondItem="1qH-RB-hwe" secondAttribute="trailing" constant="15" id="JAE-Ih-aLG"/>
+                                    <constraint firstItem="o0i-Fv-fI6" firstAttribute="leading" secondItem="I7Y-VD-hmK" secondAttribute="leading" constant="25" id="JxL-fT-Gld"/>
                                     <constraint firstAttribute="trailing" secondItem="7Hg-X9-hcF" secondAttribute="trailing" constant="25" id="KFt-D5-l51"/>
                                     <constraint firstAttribute="trailing" secondItem="hkA-ku-rcP" secondAttribute="trailing" constant="25" id="OYH-j7-bPu"/>
                                     <constraint firstItem="k8z-YA-rcj" firstAttribute="leading" secondItem="I7Y-VD-hmK" secondAttribute="leading" constant="55" id="Odr-t4-v7d"/>
@@ -203,6 +206,7 @@
                                     <constraint firstAttribute="bottom" secondItem="cq9-fd-jGl" secondAttribute="bottom" constant="90" id="f2e-Dd-4RK"/>
                                     <constraint firstItem="93d-Zp-aUc" firstAttribute="centerX" secondItem="I7Y-VD-hmK" secondAttribute="centerX" id="flh-in-CIL"/>
                                     <constraint firstItem="1qH-RB-hwe" firstAttribute="leading" secondItem="I7Y-VD-hmK" secondAttribute="leading" constant="25" id="hjQ-El-AsL"/>
+                                    <constraint firstItem="93d-Zp-aUc" firstAttribute="leading" secondItem="I7Y-VD-hmK" secondAttribute="leading" constant="25" id="iOG-4b-QA0"/>
                                     <constraint firstItem="o0i-Fv-fI6" firstAttribute="centerX" secondItem="I7Y-VD-hmK" secondAttribute="centerX" id="ok0-fv-DSv"/>
                                     <constraint firstItem="WSG-T1-uhV" firstAttribute="leading" secondItem="I7Y-VD-hmK" secondAttribute="leading" id="vmm-6a-tek"/>
                                     <constraint firstAttribute="trailing" secondItem="gOH-9J-1hg" secondAttribute="trailing" constant="55" id="z0S-R3-f4a"/>
